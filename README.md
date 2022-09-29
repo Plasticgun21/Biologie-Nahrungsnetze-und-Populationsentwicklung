@@ -17,9 +17,9 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen von Leb
 ### 1.2 User Stories
 
 | US-№ | Verbindlichkeit | Typ  | Prgm Nr. |Beschreibung                       |
-| ---- | --------------- | ---- | | ---------------------------------- |
-| 1    |                 |      | | Als der Nutzer möchte ich , damit 🤷‍♂️ |
-| ...  |                 |      | |                                    |
+| ---- | --------------- | ---- |          | ---------------------------------- |
+| 1    |                 |      |          | Als der Nutzer möchte ich , damit 🤷‍♂️ | 
+| ...  |                 |      |          |                                    |
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
 
