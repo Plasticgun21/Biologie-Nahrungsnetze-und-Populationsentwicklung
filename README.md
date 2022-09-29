@@ -29,10 +29,14 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |              |         |                   |
-| ...  |              |         |                   |
+| 1.1  | Das Programm läuft und ein Lebewesen wird von Nutzer ausgewählt. | Linksklick | Zeigt das Nahrungsnetz des Lebewesens. |
+| 2.1  | Das Programm läuft und ein Lebewesen wird ausgewählt. | Linksklick | Zeigt Informationen des Lebewesens. |
+| 3.1  | Das Programm läuft und eine Frage wird angezeigt. | y | Die Antwort war falsch. |
+| 3.2  | Das Programm läuft und eine Frage wird angezeigt. | y | Die Antwort war richtig. |
+| 4.1  | Das Programm läuft und die Antworten werden zusammen gerechnet. | Enter | Sie haben 50% korekt. |
+| 5.1  | Das Programm läuft und startet die Simulation. | Enter | Zeigt erstes Jahr. |
+| 5.2  | Das Programm läuft und erstes Jahr ist angezeigt. | Enter | Zeigt zweites Jahr. |
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
 ### 1.4 Diagramme
 
@@ -42,14 +46,10 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |       |           |              |               |
-| ...  |       |           |              |               |
+| 1.A  |29.9.22| Niclas, Elias | Das Programm soll die Datenbank anzeigen mit Nahrungsnetz | 240 min. |
+| 2.A  |30.9.22| alle          | Das Programm soll die Datenbank anzeigen mit Informationen | 60 min. |
 
 Total: 
-
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
-
-✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
 
 ## 3 Entscheiden
 
