@@ -1,10 +1,10 @@
 # Biologie Nahrungsnetz
 
-
+## Team DxD 
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
+|       | 0.0.1   | Wir haben unseres Thema ausgewählt und ich Luca hat Herr Siegrist für Anforderungen gefragt.|
 |       | ...     |                                                              |
 |       | 1.0.0   |                                                              |
 
