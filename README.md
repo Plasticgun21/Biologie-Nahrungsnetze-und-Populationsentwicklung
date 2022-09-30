@@ -46,7 +46,7 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |29.9.22| Niclas, Elias | Das Programm soll die Datenbank anzeigen mit Nahrungsnetz | 240 min. |
+| 1.A  |29.9.22| alle          | Das Programm soll die Datenbank anzeigen mit Nahrungsnetz | 240 min. |
 | 2.A  |30.9.22| alle          | Das Programm soll die Datenbank anzeigen mit Informationen | 60 min. |
 
 Total: 
