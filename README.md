@@ -1,7 +1,7 @@
 # Biologie Nahrungsnetz
 
  Team DxD              
- Luca Jeanneret Winsky, Niclas Erismann, Elias Spycherr
+ Luca Jeanneret Winsky, Niclas Erismann, Elias Spycher
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
