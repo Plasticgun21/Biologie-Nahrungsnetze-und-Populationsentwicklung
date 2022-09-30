@@ -15,7 +15,7 @@ das ist ein text
 ### 1.1 Ihr Projekt
 
 Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nahrungsnetz von Lebewesen, ein Quiz zum Nahrungsnetzes und eine Simulation von Populationsverlauf von Räuber und Beute.
-### 1.2 User Stories für 1. Projekt
+### 1.2.1 User Stories für 1. Projekt
 
 | US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
@@ -31,7 +31,7 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 5    |      kann       | Funktion | Ich möchte, dass man Informationen, welche falsch erscheinen melden kann, damit man Falschinfos vermeiden kann.|
 | 5    |      kann       | Funktion | Ich möchte.|
 
-### 1.2 User Stories für 1. Projekt
+### 1.2.2 User Stories für 1. Projekt
 
 | US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
@@ -43,16 +43,17 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 6    |      muss       | Funktion | Ich möchte, dass dem Benutzer am schluss vom Quiz gratuliert wird und für eine weitere Runde gefragt wird.|
 | 7    |      muss       | Funktion | .|
 
-### 1.2 User Stories für 1. Projekt
+### 1.2.3 User Stories für 1. Projekt
 
 | US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |      muss       | Funktion | Ich möchte, dass der Nutzer Zahlen zu für den Momentanen Bestand der Beute eingeben kann um damit zu rechnen|
-| 2    |      muss       | Funktion |  |
-| 3    |      muss       | Funktion | Als der Nutzer möchte ich beim dritten Programm die Simulation sehen, damit ich die Population sich verändert.|
+| 1    |      muss       | Funktion | Ich möchte, dass der Nutzer Zahlen zu für den Momentanen Bestand der Beute eingeben kann um, damit zu rechnen|
+| 2    |      muss       | Funktion | Ich möchte als Nutzer, dass die Beute und die Räuber andere Farben haben , damit ich sie unterscheiden kann. |
+| 3    |      muss       | Funktion | Ich möchte, als Nutzer, dass die x/y Zahlen bein Diagramm angezeigt werden, damit ich das .|
 | 4    |      muss       | Funktion | Als der Nutzer möchte ich beim dritten Programm die Simulation sehen, damit ich die Population sich verändert.|
 | 5    |      muss       | Funktion | Als der Nutzer möchte ich beim dritten Programm die Simulation sehen, damit ich die Population sich verändert.|
 | 6    |      muss       | Funktion | Als der Nutzer möchte ich beim dritten Programm die Simulation sehen, damit ich die Population sich verändert.|
+| 7    |      
 
 ### 1.3 Testfälle
 
