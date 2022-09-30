@@ -15,16 +15,44 @@ das ist ein text
 ### 1.1 Ihr Projekt
 
 Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nahrungsnetz von Lebewesen, ein Quiz zum Nahrungsnetzes und eine Simulation von Populationsverlauf von Räuber und Beute.
-### 1.2 User Stories
+### 1.2 User Stories für 1. Projekt
 
 | US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |      muss       | Funktion | Als der Nutzer möchte ich beim ersten Programm ein Lebewesen auswählen, damit ich das Nahrungsnetz des Lebewesen sehen kann. | 
-| 2    |      kann       | Qualität | Als der Nutzer möchte ich beim ersten Programm ein Lebewesen auswählen, damit ich Informationen über des Lebewesen sehen kann. |
-| 3    |      muss       | Funktion | Als der Nutzer möchte ich beim zweiten Programm nach der Frage sehen ob ich richtig oder flasch war, damit ich sehen kann wie gut ich bin. |
-| 4    |      kann       | Qualität | Als der Nutzer möchte ich beim zweiten Programm sehen wie viel Prozent Richtig wär, damit ich sehe wie gut ich bin. |
-| 5    |      muss       | Funktion | Als der Nutzer möchte ich beim dritten Programm die Simulation sehen, damit ich die Population sich verändert.|
+| 1    |      muss       | Funktion | Ich möchte, dass eine Datenbank eingelesne wird, damit man | 
+| 2    |      muss       | Funktion | Ich möchte, dass man ein Lebewesen, über das man etwas erfahren will, einlesne kann, damit man schlauer wird.  | 
+| 3    |      muss       | Funktion | Ich möchte, dass der Name des Lebwesens angezeigt wird und darunter Familie, Nahrung und feinde angezeigt werden.|
+| 3    |      muss       | Funktion | Ich möchte, dass der Nutzer gefragt wird ob ein weiteres Tier eingelesen werden soll, damit man noch schlauer werden kann. |
+| 4    |      kann       | Funktion | Ich möchte, dass Falscheingaben mit catch if behandelt werden, dass das Programm nicht abstürzt.|
+| 5    |      kann       | Funktion | Ich möchte, dass bei Eingaben die nicht genau dem Tier entsprechen vorgeschlagen wird, was man sonnst suchen könnte.|
+| 6    |      kann       | Funktion | Ich möchte, dass der Benutzer alle Tiere geordnet ausgeben kann, damit er einen Überblick hat.|
+| 7    |      kann       | Funktion | Ich möchte, dass man die Sortierung anpassen kann nach verschiedenen Kriterien, dass der Nutzer Tiere besser findet.|
+| 5    |      kann       | Funktion | Ich möchte anzeigen lassen welche Tiere die letzten Male gesucht worden, damit man Sachen wiederfindet.|
+| 5    |      kann       | Funktion | Ich möchte, dass man Informationen, welche falsch erscheinen melden kann, damit man Falschinfos vermeiden kann.|
+| 5    |      kann       | Funktion | Ich möchte.|
 
+### 1.2 User Stories für 1. Projekt
+
+| US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
+| ---- | --------------- | ---- | ---------------------------------- |
+| 1    |      muss       | Funktion | Ich möchte, dass der Nutzer das Programm mit Tastendruck starten kann, damit er spielen kann|
+| 2    |      muss       | Funktion | Ich möchte, dass eine zufällige Frage aus der Datenbank ausgegeben wird, dass er eine Frage bekommt.|
+| 3    |      muss       | Funktion | Ich möchte, dass der Nutzer zwischen richtig und falsch auswählen kann, dass er antworten kann.|
+| 4    |      muss       | Funktion | Ich möchte, dass die Anwort mit der Lösung verglichen wird und ausgegeben wird ob es die richtige Antwort ist, damit der Nutzer weiss ob er richtig war.|
+| 5    |      muss       | Funktion | Ich möchte, dass gefragt wird ob der Nutzer die nächste Frage beantworten will, damit er weiterspielen kann.|
+| 6    |      muss       | Funktion | Ich möchte, dass dem Benutzer am schluss vom Quiz gratuliert wird und für eine weitere Runde gefragt wird.|
+| 7    |      muss       | Funktion | .|
+
+### 1.2 User Stories für 1. Projekt
+
+| US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
+| ---- | --------------- | ---- | ---------------------------------- |
+| 1    |      muss       | Funktion | Ich möchte, dass der Nutzer Zahlen zu für den Momentanen Bestand der Beute eingeben kann um damit zu rechnen|
+| 2    |      muss       | Funktion |  |
+| 3    |      muss       | Funktion | Als der Nutzer möchte ich beim dritten Programm die Simulation sehen, damit ich die Population sich verändert.|
+| 4    |      muss       | Funktion | Als der Nutzer möchte ich beim dritten Programm die Simulation sehen, damit ich die Population sich verändert.|
+| 5    |      muss       | Funktion | Als der Nutzer möchte ich beim dritten Programm die Simulation sehen, damit ich die Population sich verändert.|
+| 6    |      muss       | Funktion | Als der Nutzer möchte ich beim dritten Programm die Simulation sehen, damit ich die Population sich verändert.|
 
 ### 1.3 Testfälle
 
