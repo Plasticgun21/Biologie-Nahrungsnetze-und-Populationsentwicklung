@@ -24,13 +24,16 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 3    |      muss       | Funktion | Ich möchte, dass der Nutzer gefragt wird ob ein weiteres Tier eingelesen werden soll, damit man noch schlauer werden kann. |
 | 4    |      kann       | Funktion | Ich möchte, dass Falscheingaben mit catch if behandelt werden, dass das Programm nicht abstürzt.|
 | 5    |      kann       | Funktion | Ich möchte, dass bei Eingaben die nicht genau dem Tier entsprechen vorgeschlagen wird, was man sonnst suchen könnte.|
-| 6    |      kann       | Funktion | Ich möchte, dass der Benutzer alle Tiere geordnet ausgeben kann, damit er einen Überblick hat.|
+| 6    |      kann       | Funktion | Ich möchte, dass der Benutzer alle Tiere geordnet ausgeben kann, damit er einen Überblick hat.
 | 7    |      kann       | Funktion | Ich möchte, dass man die Sortierung anpassen kann nach verschiedenen Kriterien, dass der Nutzer Tiere besser findet.|
-| 5    |      kann       | Funktion | Ich möchte anzeigen lassen welche Tiere die letzten Male gesucht worden, damit man Sachen wiederfindet.|
-| 5    |      kann       | Funktion | Ich möchte, dass man Informationen, welche falsch erscheinen melden kann, damit man Falschinfos vermeiden kann.|
-| 5    |      kann       | Funktion | Ich möchte.|
+| 8    |      kann       | Funktion | Ich möchte anzeigen lassen welche Tiere die letzten Male gesucht worden, damit man Sachen wiederfindet.|
+| 9    |      kann       | Funktion | Ich möchte, dass man Informationen, welche falsch erscheinen melden kann, damit man Falschinfos vermeiden kann.|
+| 10   |      kann       | Funktion | Ich möchte, dass durch mehrere ausgewählte Tiere ein Nahrungsnetz automatisch erzeugt wird, damit man noch mehr lernt|
+| 11   |      kann       | Funktion | Ich möchte, dass man eine Nahrung anklicken kann und dann alle Tiere angezeigt werden, die diese Nahrung ebenfalls essen.|
+| 12   |      kann       | Funktion | Ich möchte, dass die Auswahl zur verfügung steht ein Bild vom Tier anzuzeigen, damit man das Tier sieht.|
+| 13   |      kann       | Funktion | Ich möchte, .|
 
-### 1.2 User Stories für 1. Projekt
+### 1.2 User Stories für 2. Projekt
 
 | US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
@@ -40,9 +43,12 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 4    |      muss       | Funktion | Ich möchte, dass die Anwort mit der Lösung verglichen wird und ausgegeben wird ob es die richtige Antwort ist, damit der Nutzer weiss ob er richtig war.|
 | 5    |      muss       | Funktion | Ich möchte, dass gefragt wird ob der Nutzer die nächste Frage beantworten will, damit er weiterspielen kann.|
 | 6    |      muss       | Funktion | Ich möchte, dass dem Benutzer am schluss vom Quiz gratuliert wird und für eine weitere Runde gefragt wird.|
-| 7    |      muss       | Funktion | .|
+| 7    |      kann       | Funktion | Ich möchte, dass der Benutzer einen anderen Schwierigkeitsgrad wählen kann für schwerere Fragen, damit es nicht zu einfach wird.|
+| 8    |      kann       | Funktion | Ich möchte, dass der Nutzer einen anderen Quizmodus wählen kann, damit es mehr viefalt gibt.|
+| 9    |      kann       | Funktion | Ich möchte, dass am Ende der Runde gesagt wird wie viele Punkte man gemacht hat, damit man weiss wie gut man ist.|
 
-### 1.2 User Stories für 1. Projekt
+
+### 1.2 User Stories für 3. Projekt
 
 | US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
