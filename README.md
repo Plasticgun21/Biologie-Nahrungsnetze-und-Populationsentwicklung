@@ -49,10 +49,10 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | ---- | --------------- | ---- | ---------------------------------- |
 | 1    |      muss       | Funktion | Ich möchte, dass der Nutzer Zahlen zu für den Momentanen Bestand der Beute eingeben kann um, damit zu rechnen|
 | 2    |      muss       | Funktion | Ich möchte als Nutzer, dass die Beute und die Räuber andere Farben haben , damit ich sie unterscheiden kann. |
-| 3    |      muss       | Funktion | Ich möchte, als Nutzer, dass die x/y Zahlen bein Diagramm angezeigt werden, damit ich das .|
-| 4    |      muss       | Funktion | Als der Nutzer möchte ich beim dritten Programm die Simulation sehen, damit ich die Population sich verändert.|
-| 5    |      muss       | Funktion | Als der Nutzer möchte ich beim dritten Programm die Simulation sehen, damit ich die Population sich verändert.|
-| 6    |      muss       | Funktion | Als der Nutzer möchte ich beim dritten Programm die Simulation sehen, damit ich die Population sich verändert.|
+| 3    |      muss       | Funktion | Ich möchte, als Nutzer, dass die x/y Zahlen bein Diagramm angezeigt werden, damit ich das ich es Visuel sehen kann.|
+| 4    |      muss       | Funktion | Ich möchte, als Nutzer, mehrere Jahren haben, damit ich es länger sehen kann.|
+| 5    |      muss       | Funktion | Ich möchte, als Nutzer, mit einem knopf von neu anfangen, damit ich neue angaben reintun kann.|
+| 6    |      kann       | Rand | Ich möchte, als Nutzer, Lebewesen aus dem ersten Programm direckt nehmen, damit es cool ist.|
 | 7    |      
 
 ### 1.3 Testfälle
