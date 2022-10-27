@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 
 namespace NahrungsnetzAuftrag
 {
@@ -16,6 +17,7 @@ namespace NahrungsnetzAuftrag
 
         static void DatenbankEinlesen()
         {
+            Console.OutputEncoding = Encoding.Unicode;
             string file = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
             List<string> lines = File.ReadAllLines(file).ToList();
 
