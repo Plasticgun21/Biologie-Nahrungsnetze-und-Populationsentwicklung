@@ -1,19 +1,29 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace NahrungsnetzAuftrag
 {
     internal class Program
     {
-        public string Dateipfad = @"";
-
         static void Main(string[] args)
         {
+            DatenbankEinlesen();
 
+            
         }
 
         static void DatenbankEinlesen()
         {
-            string[] lines = File.ReadAllLines(textFile);
+            string file = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
+            List<string> lines = File.ReadAllLines(file).ToList();
+
+            foreach (string Zeile in lines)
+            {
+                Console.WriteLine(Zeile);
+            }
+
         }
 
         static void DatenbankAusgeben()
