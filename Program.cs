@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using static System.Net.WebRequestMethods;
 using File = System.IO.File;
 
@@ -35,6 +36,7 @@ namespace NahrungsnetzAuftrag
         {
             Console.OutputEncoding = Encoding.Unicode;
             string Tier;
+            int Count = 0;
             string file = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
 
             List<Typen> tiere = new List<Typen>();
@@ -59,8 +61,7 @@ namespace NahrungsnetzAuftrag
 
                 tiere.Add(newTypen);
 
-                int pos = Array.IndexOf(einträge, Tier);
-                Console.WriteLine(pos);
+                
             }
             
 
@@ -68,6 +69,13 @@ namespace NahrungsnetzAuftrag
             foreach (var tiereTemp in tiere)
             {
                 Console.WriteLine(tiereTemp.Tier);
+                Count++;
+                if(tiereTemp.Tier == Tier)
+                {
+                    Console.Write("Gefunden " + Count);
+                    System.Environment.Exit(1);
+                }
+                
             }
 
           
