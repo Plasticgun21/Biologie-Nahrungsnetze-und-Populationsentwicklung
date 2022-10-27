@@ -13,7 +13,11 @@ namespace NahrungsnetzAuftrag
     {
         static void Main(string[] args)
         {
-            DatenbankAusgebenBesser(); 
+            DatenbankAusgebenBesser();
+            if(DatenbankAusgebenBesser.i == DatenbankAusgebenBesser.i)
+            {
+                DatenbankAusgebenBesser();
+            }
         }
 
         static void DatenbankAusgeben()
@@ -37,6 +41,7 @@ namespace NahrungsnetzAuftrag
             Console.OutputEncoding = Encoding.Unicode;
             string Tier;
             int Count = 0;
+            int Count2 = 0;
             string file = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
 
             List<Typen> tiere = new List<Typen>();
@@ -57,28 +62,38 @@ namespace NahrungsnetzAuftrag
                 newTypen.Population = einträge[3];
                 newTypen.Nahrung = einträge[4];
                 newTypen.Natürliche_Feinde = einträge[5];
-                newTypen.Funfact = einträge[6];
 
                 tiere.Add(newTypen);
 
                 
             }
+
+
+           
+                Count = 0;
+                foreach (var tiereTemp in tiere)
+                {
+                    //Console.WriteLine(tiereTemp.Tier);
+                    Count++;
+                    if (tiereTemp.Tier == Tier)
+                    {
+                        Console.WriteLine("Gefunden " + Count);
+                        Console.WriteLine($" Unterordnung: {tiereTemp.Unterordnung} \r\n Tier: {tiereTemp.Tier} \r\n Alter: {tiereTemp.Ewartetes_Alter} \r\n Population: {tiereTemp.Population} \r\n Nahrung: {tiereTemp.Nahrung} \r\n Natürliche Feinde: {tiereTemp.Natürliche_Feinde}");
+                        break;
+                    }
+
+                }
+                int i = File.ReadAllLines(file).Count();
+                if (i == i)
+                {
+                    return i;
+                }
+            
+            Console.WriteLine("Ende");
+
             
 
 
-            foreach (var tiereTemp in tiere)
-            {
-                Console.WriteLine(tiereTemp.Tier);
-                Count++;
-                if(tiereTemp.Tier == Tier)
-                {
-                    Console.Write("Gefunden " + Count);
-                    System.Environment.Exit(1);
-                }
-                
-            }
-
-          
         }
     }
 }
