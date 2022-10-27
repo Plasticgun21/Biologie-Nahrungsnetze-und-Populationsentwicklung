@@ -52,10 +52,11 @@ namespace NahrungsnetzAuftrag
                 newTypen.Natürliche_Feinde = einträge[5];
                 newTypen.Funfact = einträge[6];
 
+                tiere.Add(newTypen);
             }
             foreach (var tiereTemp in tiere)
             {
-                Console.WriteLine($"{tiereTemp.Tier}");
+                Console.WriteLine(tiereTemp.Tier);
             }
 
           
