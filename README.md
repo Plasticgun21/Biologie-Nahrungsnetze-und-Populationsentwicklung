@@ -87,8 +87,9 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 3.1  | Das Programm läuft und startet die Simulation. | Enter | Zeigt erstes Jahr. |
+| 3.1  | Das Programm läuft und fragt um die Werte einzugeben. | 10 | Zeigt erstes Jahr. |
 | 3.2  | Das Programm läuft und erstes Jahr ist angezeigt. | Enter | Zeigt zweites Jahr. |
+| 3.3  | 
 
 
 ### 1.4 Diagramme
