@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using static System.Net.WebRequestMethods;
@@ -14,10 +15,6 @@ namespace NahrungsnetzAuftrag
         static void Main(string[] args)
         {
             DatenbankAusgebenBesser();
-            if(DatenbankAusgebenBesser.i == DatenbankAusgebenBesser.i)
-            {
-                DatenbankAusgebenBesser();
-            }
         }
 
         static void DatenbankAusgeben()
@@ -41,13 +38,16 @@ namespace NahrungsnetzAuftrag
             Console.OutputEncoding = Encoding.Unicode;
             string Tier;
             int Count = 0;
-            int Count2 = 0;
+            bool temp = false;
+            string input;
             string file = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
 
             List<Typen> tiere = new List<Typen>();
             List<string> lines = File.ReadAllLines(file).ToList();
 
-            Console.WriteLine("Über welches Tier willst du etwas erfahren?");
+            int AnzahlTiereTemp = File.ReadAllLines(file).Count();
+            
+            Console.WriteLine($"Über welches Tier willst du etwas erfahren? In der Datenbank exestieren momentan {AnzahlTiereTemp} Tiere!");
             Tier = Console.ReadLine();
 
             
@@ -69,27 +69,44 @@ namespace NahrungsnetzAuftrag
             }
 
 
-           
+            while (true)
+            {
                 Count = 0;
+                temp = false;
                 foreach (var tiereTemp in tiere)
                 {
                     //Console.WriteLine(tiereTemp.Tier);
                     Count++;
                     if (tiereTemp.Tier == Tier)
                     {
-                        Console.WriteLine("Gefunden " + Count);
+                        Console.WriteLine($"Gefunden auf Zeile {Count}");
                         Console.WriteLine($" Unterordnung: {tiereTemp.Unterordnung} \r\n Tier: {tiereTemp.Tier} \r\n Alter: {tiereTemp.Ewartetes_Alter} \r\n Population: {tiereTemp.Population} \r\n Nahrung: {tiereTemp.Nahrung} \r\n Natürliche Feinde: {tiereTemp.Natürliche_Feinde}");
+                        temp = true;
                         break;
                     }
 
                 }
-                int i = File.ReadAllLines(file).Count();
-                if (i == i)
+                if(temp == true)
                 {
-                    return i;
+                    break;
                 }
+                Console.WriteLine("Tier wurde nicht gefunden haben sie es richtig geschrieben? y | n");
+                input = Console.ReadLine();
+                if(input == "y")
+                {
+                    Console.WriteLine("Möchten sie es hinzufügen?");
+                    break;
+                }
+                else if (input == "n")
+                {
+                    Console.Write("Geben sie das Tier erneut ein: ");
+                    Tier = Console.ReadLine();
+                }
+            }
+
             
-            Console.WriteLine("Ende");
+            
+            Console.WriteLine("------------- Ende ---------------");
 
             
 
