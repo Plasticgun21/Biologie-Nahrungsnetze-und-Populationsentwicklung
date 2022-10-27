@@ -16,6 +16,8 @@ das ist ein text
 
 Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nahrungsnetz von Lebewesen, ein Quiz zum Nahrungsnetzes und eine Simulation von Populationsverlauf von Räuber und Beute.
 
+## 1.2 User Stories
+
 ### 1.2.1 User Stories für 1. Projekt
 
 | US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
@@ -23,14 +25,13 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 1    |      muss       | Funktion | Ich möchte, dass eine Datenbank eingelesen wird, damit man die Informationen sehen kann. | 
 | 2    |      muss       | Funktion | Ich möchte, dass man ein Lebewesen, über das man etwas erfahren will, einlesen kann, damit man schlauer wird.  | 
 | 3    |      muss       | Funktion | Ich möchte, dass der Name des Lebwesens angezeigt wird und darunter Familie, Nahrung und feinde angezeigt werden.|
-| 3    |      muss       | Funktion | Ich möchte, dass der Nutzer gefragt wird ob ein weiteres Tier eingelesen werden soll, damit man noch schlauer werden kann. |
-| 4    |      kann       | Funktion | Ich möchte, dass Falscheingaben mit catch if behandelt werden, dass das Programm nicht abstürzt.|
-| 5    |      kann       | Funktion | Ich möchte, dass bei Eingaben die nicht genau dem Tier entsprechen vorgeschlagen wird, was man sonnst suchen könnte.|
-| 6    |      kann       | Funktion | Ich möchte, dass der Benutzer alle Tiere geordnet ausgeben kann, damit er einen Überblick hat.|
-| 7    |      kann       | Funktion | Ich möchte, dass man die Sortierung anpassen kann nach verschiedenen Kriterien, dass der Nutzer Tiere besser findet.|
-| 5    |      kann       | Funktion | Ich möchte anzeigen lassen welche Tiere die letzten Male gesucht worden, damit man Sachen wiederfindet.|
-| 5    |      kann       | Funktion | Ich möchte, dass man Informationen, welche falsch erscheinen melden kann, damit man Falschinfos vermeiden kann.|
-| 5    |      kann       | Funktion | Ich möchte.|
+| 4    |      muss       | Funktion | Ich möchte, dass der Nutzer gefragt wird ob ein weiteres Lebewesen eingelesen werden soll, damit man noch schlauer werden kann. |
+| 5    |      kann       | Funktion | Ich möchte, dass Falscheingaben mit catch if behandelt werden, dass das Programm nicht abstürzt.|
+| 6    |      kann       | Funktion | Ich möchte, dass bei Eingaben die nicht genau dem Tier entsprechen vorgeschlagen wird, was man sonnst suchen könnte.|
+| 7    |      kann       | Funktion | Ich möchte, dass der Benutzer alle Tiere geordnet ausgeben kann, damit er einen Überblick hat.|
+| 8    |      kann       | Funktion | Ich möchte, dass man die Sortierung anpassen kann nach verschiedenen Kriterien, dass der Nutzer Tiere besser findet.|
+| 9    |      kann       | Funktion | Ich möchte anzeigen lassen welche Tiere die letzten Male gesucht worden, damit man Sachen wiederfindet.|
+| 10   |      kann       | Funktion | Ich möchte, dass man Informationen, welche falsch erscheinen melden kann, damit man Falschinfos vermeiden kann.|
 
 
 ### 1.2.2 User Stories für 2. Projekt
@@ -43,7 +44,6 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 4    |      muss       | Funktion | Ich möchte, dass die Anwort mit der Lösung verglichen wird und ausgegeben wird ob es die richtige Antwort ist, damit der Nutzer weiss ob er richtig war.|
 | 5    |      muss       | Funktion | Ich möchte, dass gefragt wird ob der Nutzer die nächste Frage beantworten will, damit er weiterspielen kann.|
 | 6    |      muss       | Funktion | Ich möchte, dass dem Benutzer am schluss vom Quiz gratuliert wird und für eine weitere Runde gefragt wird.|
-| 7    |      muss       | Funktion | .|
 
 
 ### 1.2.3 User Stories für 3. Projekt
@@ -55,22 +55,40 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 3    |      muss       | Funktion | Ich möchte, als Nutzer, dass die x/y Zahlen bein Diagramm angezeigt werden, damit ich das ich es Visuel sehen kann.|
 | 4    |      muss       | Funktion | Ich möchte, als Nutzer, mehrere Jahren haben, damit ich es länger sehen kann.|
 | 5    |      muss       | Funktion | Ich möchte, als Nutzer, mit einem knopf von neu anfangen, damit ich neue angaben reintun kann.|
-| 6    |      kann       | Rand | Ich möchte, als Nutzer, Lebewesen aus dem ersten Programm direckt nehmen, damit es cool ist.|
-| 7    |      
+| 6    |      kann       | Rand | Ich möchte, als Nutzer, Lebewesen aus dem ersten Programm direckt nehmen, damit es cool ist.|     
 
 
 ### 1.3 Testfälle
 
+### 1.3.1 Testfälle für 1. Projekt
+
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  | Das Programm läuft und ein Lebewesen wird vom Nutzer ausgewählt. | Linksklick | Zeigt das Nahrungsnetz des Lebewesens. |
-| 1.2  | Das Programm läuft und ein Lebewesen wird ausgewählt. | Linksklick | Zeigt Informationen des Lebewesens. |
+| 1.1  | Das Programm läuft und ein Lebewesen wird vom Nutzer eingegeben. | "Eingabe vom Tier" | Zeigt das Nahrungsnetz des Lebewesens. |
+| 1.2  | Das Programm läuft und ein Lebewesen wurde ausgewählt. | Enter | Zeigt Informationen des Lebewesens. |
+| 1.3  | Das Programm läuft und das Programm fragt ob man noch ein anderes Lebewesen sehen will. | y | "Geben sie ein Lebewesen ein." |
+| 1.4  | Das Programm läuft und ein falsches Lebewesen wurde eingegeben. | Enter | "Dieses Lebewesen ist nicht auf der Datenbank wollten sie dieses Tier auswählen." |
+
+
+
+### 1.3.2 Testfälle für 2. Projekt
+
+| TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
+| ---- | ------------ | ------- | ----------------- |
 | 2.1  | Das Programm läuft und eine Frage wird angezeigt. | y | Die Antwort war falsch. |
-| 2.2  | Das Programm läuft und eine Frage wird angezeigt. | y | Die Antwort war richtig. |
-| 2.3  | Das Programm läuft und die Antworten werden zusammen gerechnet. | Enter | Sie haben 50% korekt. |
+| 2.2  | Das Programm läuft und fragt ob man noch eine Frage will. | y | "Hier ist ihre nächste Frage." |
+| 2.3  | Das Programm läuft und eine Frage wird angezeigt. | y | Die Antwort war richtig. |
+| 2.4  | Das Programm läuft und fragt ob man noch eine Frage will. | n | "Ihre Antworten werden jetzt zusammen gerechnet." |
+| 2.5  | Das Programm läuft und die Antworten werden zusammen gerechnet. | Enter | "Sie haben 50% korekt." |
+| 2.6  | Das Programm läuft und fragt ob man noch einmal will spielen. | n | "Danke fürs mitspielen :)
+
+
+### 1.3.3 Testfälle für 3. Projekt
+
+| TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
+| ---- | ------------ | ------- | ----------------- |
 | 3.1  | Das Programm läuft und startet die Simulation. | Enter | Zeigt erstes Jahr. |
 | 3.2  | Das Programm läuft und erstes Jahr ist angezeigt. | Enter | Zeigt zweites Jahr. |
-
 
 
 ### 1.4 Diagramme
