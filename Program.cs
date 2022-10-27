@@ -10,36 +10,49 @@ namespace NahrungsnetzAuftrag
     {
         static void Main(string[] args)
         {
-
-            DatenbankEinlesen();
-            DatenbankAusgeben();
-
-            
-        }
-
-        static void DatenbankEinlesen()
-        {
-            Console.OutputEncoding = Encoding.Unicode;
-            string file = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
-            List<string> lines = File.ReadAllLines(file).ToList();
-
-
-
-
+            DatenbankAusgebenBesser(); 
         }
 
         static void DatenbankAusgeben()
         {
             Console.OutputEncoding = Encoding.Unicode;
+            string Tier;
             string file = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
             List<string> lines = File.ReadAllLines(file).ToList();
-
             Console.WriteLine("Über welches Tier willst du etwas erfahren?");
+            Tier = Console.ReadLine();
+
             foreach (string Zeile in lines)
             {
                 string[] entries = Zeile.Split(';');
             }
 
+        }
+
+        static void DatenbankAusgebenBesser()
+        {
+            Console.OutputEncoding = Encoding.Unicode;
+            string Tier;
+            string file = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
+
+            List<Typen> tiere = new List<Typen>();
+            List<string> lines = File.ReadAllLines(file).ToList();
+
+            Console.WriteLine("Über welches Tier willst du etwas erfahren?");
+
+            foreach (var Zeile in lines)
+            {
+                string[] einträge = Zeile.Split(';');
+                Typen newTypen = new Typen();
+                newTypen.Tier = einträge[0];
+
+            }
+            foreach (var tiereTemp in tiere)
+            {
+                Console.WriteLine(tiereTemp.Tier);
+            }
+
+          
         }
     }
 }
