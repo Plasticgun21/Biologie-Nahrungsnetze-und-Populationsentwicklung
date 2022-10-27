@@ -15,11 +15,12 @@ das ist ein text
 ### 1.1 Ihr Projekt
 
 Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nahrungsnetz von Lebewesen, ein Quiz zum Nahrungsnetzes und eine Simulation von Populationsverlauf von Räuber und Beute.
+
 ### 1.2.1 User Stories für 1. Projekt
 
 | US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |      muss       | Funktion | Ich möchte, dass eine Datenbank eingelesne wird, damit man | 
+| 1    |      muss       | Funktion | Ich möchte, dass eine Datenbank eingelesen wird, damit man die Informationen sehen kann. | 
 | 2    |      muss       | Funktion | Ich möchte, dass man ein Lebewesen, über das man etwas erfahren will, einlesne kann, damit man schlauer wird.  | 
 | 3    |      muss       | Funktion | Ich möchte, dass der Name des Lebwesens angezeigt wird und darunter Familie, Nahrung und feinde angezeigt werden.|
 | 3    |      muss       | Funktion | Ich möchte, dass der Nutzer gefragt wird ob ein weiteres Tier eingelesen werden soll, damit man noch schlauer werden kann. |
@@ -31,7 +32,8 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 5    |      kann       | Funktion | Ich möchte, dass man Informationen, welche falsch erscheinen melden kann, damit man Falschinfos vermeiden kann.|
 | 5    |      kann       | Funktion | Ich möchte.|
 
-### 1.2.2 User Stories für 1. Projekt
+
+### 1.2.2 User Stories für 2. Projekt
 
 | US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
@@ -43,7 +45,8 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 6    |      muss       | Funktion | Ich möchte, dass dem Benutzer am schluss vom Quiz gratuliert wird und für eine weitere Runde gefragt wird.|
 | 7    |      muss       | Funktion | .|
 
-### 1.2.3 User Stories für 1. Projekt
+
+### 1.2.3 User Stories für 3. Projekt
 
 | US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
@@ -55,17 +58,19 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 6    |      kann       | Rand | Ich möchte, als Nutzer, Lebewesen aus dem ersten Programm direckt nehmen, damit es cool ist.|
 | 7    |      
 
+
 ### 1.3 Testfälle
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  | Das Programm läuft und ein Lebewesen wird von Nutzer ausgewählt. | Linksklick | Zeigt das Nahrungsnetz des Lebewesens. |
-| 2.1  | Das Programm läuft und ein Lebewesen wird ausgewählt. | Linksklick | Zeigt Informationen des Lebewesens. |
-| 3.1  | Das Programm läuft und eine Frage wird angezeigt. | y | Die Antwort war falsch. |
-| 3.2  | Das Programm läuft und eine Frage wird angezeigt. | y | Die Antwort war richtig. |
-| 4.1  | Das Programm läuft und die Antworten werden zusammen gerechnet. | Enter | Sie haben 50% korekt. |
-| 5.1  | Das Programm läuft und startet die Simulation. | Enter | Zeigt erstes Jahr. |
-| 5.2  | Das Programm läuft und erstes Jahr ist angezeigt. | Enter | Zeigt zweites Jahr. |
+| 1.1  | Das Programm läuft und ein Lebewesen wird vom Nutzer ausgewählt. | Linksklick | Zeigt das Nahrungsnetz des Lebewesens. |
+| 1.2  | Das Programm läuft und ein Lebewesen wird ausgewählt. | Linksklick | Zeigt Informationen des Lebewesens. |
+| 2.1  | Das Programm läuft und eine Frage wird angezeigt. | y | Die Antwort war falsch. |
+| 2.2  | Das Programm läuft und eine Frage wird angezeigt. | y | Die Antwort war richtig. |
+| 2.3  | Das Programm läuft und die Antworten werden zusammen gerechnet. | Enter | Sie haben 50% korekt. |
+| 3.1  | Das Programm läuft und startet die Simulation. | Enter | Zeigt erstes Jahr. |
+| 3.2  | Das Programm läuft und erstes Jahr ist angezeigt. | Enter | Zeigt zweites Jahr. |
+
 
 
 ### 1.4 Diagramme
