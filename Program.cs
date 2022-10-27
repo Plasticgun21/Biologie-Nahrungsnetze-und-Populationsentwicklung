@@ -44,12 +44,18 @@ namespace NahrungsnetzAuftrag
             {
                 string[] einträge = Zeile.Split(';');
                 Typen newTypen = new Typen();
-                newTypen.Tier = einträge[0];
+                newTypen.Unterordnung = einträge[0];
+                newTypen.Tier = einträge[1];
+                newTypen.Ewartetes_Alter = einträge[2];
+                newTypen.Population = einträge[3];
+                newTypen.Nahrung = einträge[4];
+                newTypen.Natürliche_Feinde = einträge[5];
+                newTypen.Funfact = einträge[6];
 
             }
             foreach (var tiereTemp in tiere)
             {
-                Console.WriteLine(tiereTemp.Tier);
+                Console.WriteLine($"{tiereTemp.Tier}");
             }
 
           
