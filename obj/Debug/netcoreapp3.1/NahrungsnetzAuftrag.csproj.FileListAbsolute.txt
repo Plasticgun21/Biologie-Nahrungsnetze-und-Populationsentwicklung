@@ -1,0 +1,14 @@
+C:\Users\nicla\Source\Repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\bin\Debug\netcoreapp3.1\NahrungsnetzAuftrag.exe
+C:\Users\nicla\Source\Repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\bin\Debug\netcoreapp3.1\NahrungsnetzAuftrag.deps.json
+C:\Users\nicla\Source\Repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\bin\Debug\netcoreapp3.1\NahrungsnetzAuftrag.runtimeconfig.json
+C:\Users\nicla\Source\Repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\bin\Debug\netcoreapp3.1\NahrungsnetzAuftrag.runtimeconfig.dev.json
+C:\Users\nicla\Source\Repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\bin\Debug\netcoreapp3.1\NahrungsnetzAuftrag.dll
+C:\Users\nicla\Source\Repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\bin\Debug\netcoreapp3.1\NahrungsnetzAuftrag.pdb
+C:\Users\nicla\Source\Repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\obj\Debug\netcoreapp3.1\NahrungsnetzAuftrag.csproj.AssemblyReference.cache
+C:\Users\nicla\Source\Repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\obj\Debug\netcoreapp3.1\NahrungsnetzAuftrag.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicla\Source\Repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\obj\Debug\netcoreapp3.1\NahrungsnetzAuftrag.AssemblyInfoInputs.cache
+C:\Users\nicla\Source\Repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\obj\Debug\netcoreapp3.1\NahrungsnetzAuftrag.AssemblyInfo.cs
+C:\Users\nicla\Source\Repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\obj\Debug\netcoreapp3.1\NahrungsnetzAuftrag.csproj.CoreCompileInputs.cache
+C:\Users\nicla\Source\Repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\obj\Debug\netcoreapp3.1\NahrungsnetzAuftrag.dll
+C:\Users\nicla\Source\Repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\obj\Debug\netcoreapp3.1\NahrungsnetzAuftrag.pdb
+C:\Users\nicla\Source\Repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\obj\Debug\netcoreapp3.1\NahrungsnetzAuftrag.genruntimeconfig.cache

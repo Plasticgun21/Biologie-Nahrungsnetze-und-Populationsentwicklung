@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicla\\source\\repos\\NahrungsnetzAuftrag\\NahrungsnetzAuftrag.csproj",
+      "projectUniqueName": "C:\\Users\\nicla\\Source\\Repos\\Biologie-Nahrungsnetze-und-Populationsentwicklung\\NahrungsnetzAuftrag.csproj",
       "projectName": "NahrungsnetzAuftrag",
-      "projectPath": "C:\\Users\\nicla\\source\\repos\\NahrungsnetzAuftrag\\NahrungsnetzAuftrag.csproj",
+      "projectPath": "C:\\Users\\nicla\\Source\\Repos\\Biologie-Nahrungsnetze-und-Populationsentwicklung\\NahrungsnetzAuftrag.csproj",
       "packagesPath": "C:\\Users\\nicla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicla\\source\\repos\\NahrungsnetzAuftrag\\obj\\",
+      "outputPath": "C:\\Users\\nicla\\Source\\Repos\\Biologie-Nahrungsnetze-und-Populationsentwicklung\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

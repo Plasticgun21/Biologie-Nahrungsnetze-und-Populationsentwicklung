@@ -4,9 +4,21 @@ namespace NahrungsnetzAuftrag
 {
     internal class Program
     {
+        
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+        }
+
+        static void DatenbankEinlesen()
+        {
+            
+        }
+
+        static void DatenbankAusgeben()
+        {
+            Console.WriteLine("Über welches Tier willst du etwas erfahren?");
         }
     }
 }
