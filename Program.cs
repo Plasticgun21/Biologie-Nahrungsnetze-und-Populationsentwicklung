@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using static System.Net.WebRequestMethods;
+using File = System.IO.File;
 
 namespace NahrungsnetzAuftrag
 {
@@ -39,6 +41,9 @@ namespace NahrungsnetzAuftrag
             List<string> lines = File.ReadAllLines(file).ToList();
 
             Console.WriteLine("Über welches Tier willst du etwas erfahren?");
+            Tier = Console.ReadLine();
+
+            
 
             foreach (var Zeile in lines)
             {
@@ -53,7 +58,13 @@ namespace NahrungsnetzAuftrag
                 newTypen.Funfact = einträge[6];
 
                 tiere.Add(newTypen);
+
+                int pos = Array.IndexOf(einträge, Tier);
+                Console.WriteLine(pos);
             }
+            
+
+
             foreach (var tiereTemp in tiere)
             {
                 Console.WriteLine(tiereTemp.Tier);
