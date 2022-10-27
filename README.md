@@ -21,7 +21,7 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
 | 1    |      muss       | Funktion | Ich möchte, dass eine Datenbank eingelesen wird, damit man die Informationen sehen kann. | 
-| 2    |      muss       | Funktion | Ich möchte, dass man ein Lebewesen, über das man etwas erfahren will, einlesne kann, damit man schlauer wird.  | 
+| 2    |      muss       | Funktion | Ich möchte, dass man ein Lebewesen, über das man etwas erfahren will, einlesen kann, damit man schlauer wird.  | 
 | 3    |      muss       | Funktion | Ich möchte, dass der Name des Lebwesens angezeigt wird und darunter Familie, Nahrung und feinde angezeigt werden.|
 | 3    |      muss       | Funktion | Ich möchte, dass der Nutzer gefragt wird ob ein weiteres Tier eingelesen werden soll, damit man noch schlauer werden kann. |
 | 4    |      kann       | Funktion | Ich möchte, dass Falscheingaben mit catch if behandelt werden, dass das Programm nicht abstürzt.|
