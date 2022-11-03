@@ -154,19 +154,21 @@ namespace NahrungsnetzAuftrag
                     Console.Write("Geben sie das Tier erneut ein: ");
                     TierInput = Console.ReadLine();
                 }
-                //--------- Quitz ---------------
-               
-
-                Console.WriteLine("Wilkommen beim Quiz");
-                Console.WriteLine("Wählen Sie bitte eine Schwierigkeitsstufe");
-
-
-                Console.WriteLine("Hier ist die erste Frage");
-
-
-
-                //--------- Quitz ---------------
+                
             }
+            
+            //--------- Quitz ---------------
+
+
+            Console.WriteLine("Wilkommen beim Quiz");
+            Console.WriteLine("Wählen Sie bitte eine Schwierigkeitsstufe");
+
+
+            Console.WriteLine("Hier ist die erste Frage");
+
+
+
+            //--------- Quitz ---------------
 
 
             Console.WriteLine("------------- Ende ---------------");
