@@ -139,7 +139,7 @@ namespace NahrungsnetzAuftrag
                         Temp[5] = Console.ReadLine();
 
                         Console.WriteLine($"{Temp[0]}; {Temp[2]}; {Temp[3]}; {Temp[4]}; {Temp[5]}");
-                        Console.WriteLine($"Einspeichern[97], true du neger");
+                        Console.WriteLine($"{Einspeichern[97]}, true du german");
                     }
                     else if (input == "n")
                     {

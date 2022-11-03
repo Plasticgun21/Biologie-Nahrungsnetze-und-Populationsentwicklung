@@ -57,7 +57,22 @@ namespace NahrungsnetzAuftrag
 
         public int Run()
         {
+            ConsoleKey keypressed;
+            do
+            {
 
+                Clear();
+                DisplayOptions();
+
+                ConsoleKeyInfo keyInfo = ReadKey(true);
+                keyPressed = keyInfo.Key;
+
+
+
+            } while (keyPressed != ConsoleKey.Enter);
+            
+
+            return SelectedIndex;
         }
 
     }
