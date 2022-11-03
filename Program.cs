@@ -33,12 +33,12 @@ namespace NahrungsnetzAuftrag
             }
             else
             {
-                Console.WriteLine("andere Taste gedrückt")
+                Console.WriteLine("andere Taste gedrückt");
                 
             }
 
-            Console.WriteLine("Drücke irgendeine TAste um das Menu zu schliessen.")
-            ReadKey(true);
+            Console.WriteLine("Drücke irgendeine Taste um das Menu zu schliessen.");
+            Console.ReadKey(true);
 
 
 
