@@ -71,7 +71,7 @@ namespace NahrungsnetzAuftrag
                 if(keyPressed == ConsoleKey.UpArrow)
                 {
                     SelectedIndex--;
-                    if (SelectedIndex == -1);
+                    if (SelectedIndex == -1)
                     {
                         SelectedIndex = Options.Length - 1;
                         
@@ -82,7 +82,11 @@ namespace NahrungsnetzAuftrag
                 else if (keyPressed == ConsoleKey.DownArrow)
                 {        
                     SelectedIndex++;
-                    if (SelectedIndex == Options.Le)
+                    if (SelectedIndex == Options.Length)
+                    {
+
+                        SelectedIndex = 0;
+                    }
 
 
 

@@ -120,9 +120,12 @@ namespace NahrungsnetzAuftrag
                         Console.Write("Jetzt die natürlichen Feinde \r\n >>> ");
                         Temp[5] = Console.ReadLine();
 
+                        int TempLänge = Einspeichern.Length;
+                        Console.WriteLine(TempLänge);
                         
-                        Einspeichern[Einspeichern.Length] = $"{Temp[0]}; {Temp[2]}; {Temp[3]}; {Temp[4]}; {Temp[5]};";
-                        //Console.WriteLine($"{Einspeichern[Einspeichern.Length]}, Wurde Eingespeichert");
+                        Einspeichern[TempLänge] = $"{Temp[0]}; {Temp[2]}; {Temp[3]}; {Temp[4]}; {Temp[5]};";
+                        Console.WriteLine(Einspeichern[97]);
+                        Console.WriteLine($"{Einspeichern[TempLänge]}, Wurde Eingespeichert");
 
                         File.WriteAllLines(DateiPfad, Einspeichern);
                         Console.WriteLine("Saved!");
@@ -138,7 +141,7 @@ namespace NahrungsnetzAuftrag
                     Console.Write("Geben sie das Tier erneut ein: ");
                     TierInput = Console.ReadLine();
                 }
-                //--------- Janaret ---------------
+                //--------- Quitz ---------------
                
 
                 Console.WriteLine("Wilkommen beim Quiz");
@@ -149,7 +152,7 @@ namespace NahrungsnetzAuftrag
 
 
 
-                //--------- Janaret ---------------
+                //--------- Quitz ---------------
             }
 
 
