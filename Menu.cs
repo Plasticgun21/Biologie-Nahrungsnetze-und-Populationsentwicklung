@@ -57,20 +57,38 @@ namespace NahrungsnetzAuftrag
 
         public int Run()
         {
-            ConsoleKey keypressed;
+            ConsoleKey keyPressed;
             do
             {
 
-                Clear();
+                Console.Clear();
                 DisplayOptions();
 
-                ConsoleKeyInfo keyInfo = ReadKey(true);
+                ConsoleKeyInfo keyInfo = Console.ReadKey(true);
                 keyPressed = keyInfo.Key;
 
+                //Update selectedIndex based on arrow keys.
+                if(keyPressed == ConsoleKey.UpArrow)
+                {
+                    SelectedIndex--;
+                    if (SelectedIndex == -1);
+                    {
+                        SelectedIndex = Options.Length - 1;
+                        
+                    }
+                    
+                        
+                }
+                else if (keyPressed == ConsoleKey.DownArrow)
+                {        
+                    SelectedIndex++;
+                    if (SelectedIndex == Options.Le)
 
 
+
+                }
             } while (keyPressed != ConsoleKey.Enter);
-            
+             
 
             return SelectedIndex;
         }

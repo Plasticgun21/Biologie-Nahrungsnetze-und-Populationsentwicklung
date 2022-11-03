@@ -16,33 +16,15 @@ namespace NahrungsnetzAuftrag
         
         static void Main(string[] args)
         {
-            //Intro();
+            Intro();
             Auslesen();
         }
         static void Intro()
         {
-            /*Console.WriteLine("Willkommen im Biologie Menu");
+            Console.WriteLine("Willkommen im Biologie Menu");
+            Console.WriteLine("Sie können mit den Pfeiltasten im Biologie Menu navigieren");
 
-            ConsoleKeyInfo keyPressed = Console.ReadKey();
-            if  (keyPressed.Key == ConsoleKey.Enter)
-            {
-                Console.WriteLine("Du hast Enter gedrückt");
-                //Auslesen();
-            }
-
-            else if (keyPressed.Key == ConsoleKey.LeftArrow)
-            {
-                Console.WriteLine("Du hast die linke Pfeiltaste gedrückt");
-                //Auslesen();
-            }
-
-            else 
-            {
-                Console.WriteLine("andere Taste gedrückt");
-                
-            }*/
-
-            string prompt = "Willkommen zum scuffed Biologie Menu";
+            string prompt = "██████╗ ██╗ ██████╗ ██╗      ██████╗  ██████╗ ██╗███████╗\r\n██╔══██╗██║██╔═══██╗██║     ██╔═══██╗██╔════╝ ██║██╔════╝\r\n██████╔╝██║██║   ██║██║     ██║   ██║██║  ███╗██║█████╗  \r\n██╔══██╗██║██║   ██║██║     ██║   ██║██║   ██║██║██╔══╝  \r\n██████╔╝██║╚██████╔╝███████╗╚██████╔╝╚██████╔╝██║███████╗\r\n╚═════╝ ╚═╝ ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝╚══════╝\r\n                                                         ";
             string[] options = { "Datenbank","Quiz","Diagramm" };
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
@@ -138,8 +120,12 @@ namespace NahrungsnetzAuftrag
                         Console.Write("Jetzt die natürlichen Feinde \r\n >>> ");
                         Temp[5] = Console.ReadLine();
 
-                        Console.WriteLine($"{Temp[0]}; {Temp[2]}; {Temp[3]}; {Temp[4]}; {Temp[5]}");
-                        Console.WriteLine($"{Einspeichern[97]}, true du german");
+                        
+                        Einspeichern[Einspeichern.Length] = $"{Temp[0]}; {Temp[2]}; {Temp[3]}; {Temp[4]}; {Temp[5]};";
+                        //Console.WriteLine($"{Einspeichern[Einspeichern.Length]}, Wurde Eingespeichert");
+
+                        File.WriteAllLines(DateiPfad, Einspeichern);
+                        Console.WriteLine("Saved!");
                     }
                     else if (input == "n")
                     {
@@ -162,17 +148,12 @@ namespace NahrungsnetzAuftrag
                 Console.WriteLine("Hier ist die erste Frage");
 
 
+
                 //--------- Janaret ---------------
             }
 
 
-
             Console.WriteLine("------------- Ende ---------------");
-
-            foreach (string z in Tier)
-            {
-                //Console.WriteLine(z);
-            }
 
         }
         

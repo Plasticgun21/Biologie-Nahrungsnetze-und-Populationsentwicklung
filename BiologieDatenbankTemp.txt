@@ -1,87 +1,87 @@
-Unterordnung; Tier; erwartetes Alter;Population;Nahrung;natürliche Feinde
+Unterordnung; Tier; erwartetes Alter;Population;Nahrung;natï¿½rliche Feinde
 Katzen;Katze;;;;
 ;Hund;;;;
 ;Huhn;;;;
 ;;;;;
 ;;;;;
 ;;;;;
-;Ziege;;; Laub, Gräser und Kräuter;Wölfe, Luchse und andere Raubtiere 
+;Ziege;;; Laub, Grï¿½ser und Krï¿½uter;Wï¿½lfe, Luchse und andere Raubtiere 
 ;;;;;
-Amphibien;Frosch;;;Insekten, Schnecken, Würmer und andere Amphibien;Störche, Schlangen
+Amphibien;Frosch;;;Insekten, Schnecken, Wï¿½rmer und andere Amphibien;Stï¿½rche, Schlangen
 ;Feuersalamander;;;;
 ;;;;;
 Schlangen;Python;;;;
-;Königskobra;;;Nagetiere ;
-;Boa (Abgottschlange);;;;kaum natürliche Feinde, selten große Krokodile, Raubvögel oder Raubkatzen.
-;;;;;Alles was sie bewältigen kann z.B Nagetiere, Kaimane, 
-;Ringelnatter;;;Frösche, Kröten, Molche, Kaulquappen, Eidechsen, Fische und Mäuse;
+;Kï¿½nigskobra;;;Nagetiere ;
+;Boa (Abgottschlange);;;;kaum natï¿½rliche Feinde, selten groï¿½e Krokodile, Raubvï¿½gel oder Raubkatzen.
+;;;;;Alles was sie bewï¿½ltigen kann z.B Nagetiere, Kaimane, 
+;Ringelnatter;;;Frï¿½sche, Krï¿½ten, Molche, Kaulquappen, Eidechsen, Fische und Mï¿½use;
 ;;;;;
 ;;;;;
 ;;;;;
 ;;;;;
 ;;;;;
-Vögel;Flamingo;20 bis 30  Jahre ;;Muscheln, Fische, Nereiden, diverse Würmer und Krebse;
-;Adler;;;Fische, Vögel, kleinere Säugetiere wie Ratten oder Kaninchen und manchmal Aas.;keine natürlichen Feinde
-;Eule;;;Mäuse, verspeisen aber auch Käfer, Schmetterlinge, Echsen, Frösche, kleine Vögel, Hasen und sogar Fische;grosse Eulen haben keine Fressfeinde, kleine Eulen: Marder 
-;Kuckuck;;;Schmetterlingsraupen, aber auch Heuschrecken, Käfer und Libellen;
-;Huhn;;;Körner;
-;Storch;;;Mäuse, Wühlmäuse, Maulwürfe,  Froschlurche, Eidechsen, Schlangen und Großinsekten.;Keine natürlichen Feinde, sehr selten Schakale oder Hyänen
-;Tauben;;;Samen, Früchte, Beeren und kleine Wirbellose;Raubvögel wie Sperber, Habichte, Mäusebussarde, Uhuas und Wanderfalken
-;Kolibri;;;Nektar, Insekten;Schlangen, Greifvögel, Katzen und Marder.
-;Specht;;;Insektenlarven, Spinnen, Koniferensamen, Beere, Nüsse und Baumsäfte.;
-;Ente;;;Wasserpflanzen, Sämereien, Beeren, Früchte, Frösche, Schnecken, Würmer, Laich, Larven und kleine Fische;
-;Gans;;;Gräser, Früchte und Samen;
-;Wanderfalke;;;kleine bis mittelgrosse Vögel wie Tauben,  Drosseln, Stare, Fledermäuse etc. Abhängig nach Umgebung, Jahreszeit und Tageszeit;
-;Schwalbe;;;Fliegen, Mücken und Blattläuse;
-;Strauss;;;Körner, Gräser, Kräuter und Blüten. manchmal Insekten wie Raupen und Heuschrecken. Zur Verdaung Steine und Sand.;
-;Emus;;;Körner, Gräser, Kräuter und Blüten. manchmal Insekten wie Raupen und Heuschrecken. Zur Verdaung Steine und Sand.;Löwen, Leoparden und Geparde. 
+Vï¿½gel;Flamingo;20 bis 30  Jahre ;;Muscheln, Fische, Nereiden, diverse Wï¿½rmer und Krebse;
+;Adler;;;Fische, Vï¿½gel, kleinere Sï¿½ugetiere wie Ratten oder Kaninchen und manchmal Aas.;keine natï¿½rlichen Feinde
+;Eule;;;Mï¿½use, verspeisen aber auch Kï¿½fer, Schmetterlinge, Echsen, Frï¿½sche, kleine Vï¿½gel, Hasen und sogar Fische;grosse Eulen haben keine Fressfeinde, kleine Eulen: Marder 
+;Kuckuck;;;Schmetterlingsraupen, aber auch Heuschrecken, Kï¿½fer und Libellen;
+;Huhn;;;Kï¿½rner;
+;Storch;;;Mï¿½use, Wï¿½hlmï¿½use, Maulwï¿½rfe,  Froschlurche, Eidechsen, Schlangen und Groï¿½insekten.;Keine natï¿½rlichen Feinde, sehr selten Schakale oder Hyï¿½nen
+;Tauben;;;Samen, Frï¿½chte, Beeren und kleine Wirbellose;Raubvï¿½gel wie Sperber, Habichte, Mï¿½usebussarde, Uhuas und Wanderfalken
+;Kolibri;;;Nektar, Insekten;Schlangen, Greifvï¿½gel, Katzen und Marder.
+;Specht;;;Insektenlarven, Spinnen, Koniferensamen, Beere, Nï¿½sse und Baumsï¿½fte.;
+;Ente;;;Wasserpflanzen, Sï¿½mereien, Beeren, Frï¿½chte, Frï¿½sche, Schnecken, Wï¿½rmer, Laich, Larven und kleine Fische;
+;Gans;;;Grï¿½ser, Frï¿½chte und Samen;
+;Wanderfalke;;;kleine bis mittelgrosse Vï¿½gel wie Tauben,  Drosseln, Stare, Fledermï¿½use etc. Abhï¿½ngig nach Umgebung, Jahreszeit und Tageszeit;
+;Schwalbe;;;Fliegen, Mï¿½cken und Blattlï¿½use;
+;Strauss;;;Kï¿½rner, Grï¿½ser, Krï¿½uter und Blï¿½ten. manchmal Insekten wie Raupen und Heuschrecken. Zur Verdaung Steine und Sand.;
+;Emus;;;Kï¿½rner, Grï¿½ser, Krï¿½uter und Blï¿½ten. manchmal Insekten wie Raupen und Heuschrecken. Zur Verdaung Steine und Sand.;Lï¿½wen, Leoparden und Geparde. 
 ;Geier;;;aas;
-;;;;;keine natürlichen Feinde
+;;;;;keine natï¿½rlichen Feinde
 ;;;;;
 ;;;;;
 Raubtiere;;;;;
-;Leopard;;;Käfer, Reptilien, Vögel, Grossseuger; grössere Räuber wie Bären, Hyänen, Schakale und Wölfe
+;Leopard;;;Kï¿½fer, Reptilien, Vï¿½gel, Grossseuger; grï¿½ssere Rï¿½uber wie Bï¿½ren, Hyï¿½nen, Schakale und Wï¿½lfe
 ;Puma;;;;Grosse Raubkatzen 
-;Luchs;;;Hasentiere, Nagetiere, Vögel, Fische und Reptilien;
-;Gepard;;;Huftiere wie Gazellen, Gnukälber, Impa- las etc.;
-;Tiger;;;Hirsche, Wildrinder, Tapire, Antilopen, Wildschweine  etc.;Keine natürlichen Feinde
-;Löwe;;;Gnus, Zebras, Wasserböcke, Große Kudus, Nashörner, Elefanten etc.;
+;Luchs;;;Hasentiere, Nagetiere, Vï¿½gel, Fische und Reptilien;
+;Gepard;;;Huftiere wie Gazellen, Gnukï¿½lber, Impa- las etc.;
+;Tiger;;;Hirsche, Wildrinder, Tapire, Antilopen, Wildschweine  etc.;Keine natï¿½rlichen Feinde
+;Lï¿½we;;;Gnus, Zebras, Wasserbï¿½cke, Groï¿½e Kudus, Nashï¿½rner, Elefanten etc.;
 ;;;;;
 Raubtiere im Meer ;Weisser Hai;;;Robben, kleine Wale, Thunfische oder Tintenfische.;
 ;Hammer hai;;;;
-;Schwertwal;;;;Haie, Möwen, Wale
+;Schwertwal;;;;Haie, Mï¿½wen, Wale
 ;;;;;
 Fische;Hecht;;;;
 ;Wal;;;Plankton, Krill;Orcas 
-;Kugelfisch;;;;Keine natürlichen Feinde. Selten Haie und Kraken
+;Kugelfisch;;;;Keine natï¿½rlichen Feinde. Selten Haie und Kraken
 ;Egli;;;;
 ;aal;;;kleine Fische;
 ;Pinguin;;;Fische, kleine Krebse und Tintenfische;Robben, Orcas und Haie
 ;Rochen;;;Muscheln, Krebse, Seesterne und Seeigel, manchmal kleine Fische und Plankton.;Haie, Delfine
-;Goldfisch;;;Insekten und deren Larven, Würmer, kleine Krebstiere, Wasserpflanzen und Algen;
+;Goldfisch;;;Insekten und deren Larven, Wï¿½rmer, kleine Krebstiere, Wasserpflanzen und Algen;
 ;;;;;
 ;;;;;
-Reptilien;Meeresschildkröte;;;Kopffüßern, Krebsen, Schwämmen und Quallen, später oft nur noch Pflanzlich;
-;Chamäleon;;;Insekten wie Heuschrecken, Grillen und Mehlwürmer;
+Reptilien;Meeresschildkrï¿½te;;;Kopffï¿½ï¿½ern, Krebsen, Schwï¿½mmen und Quallen, spï¿½ter oft nur noch Pflanzlich;
+;Chamï¿½leon;;;Insekten wie Heuschrecken, Grillen und Mehlwï¿½rmer;
 ;Krokodil;;;;
 ;Leguan;;;Jungtiere: Insekten und wirbellose Tieren. Ausgewachsene Tiere: ;
 ;;;;;
 ;;;;;
 ;;;;;
-Nagetiere;Hamster;;;Salat, Körner, Karotten etc.;
+Nagetiere;Hamster;;;Salat, Kï¿½rner, Karotten etc.;
 ;Maus;;;;
-;Biber;;;junge Zweige und Knospen, sowie im Winter die Rinde von Bäumen;Jungtiere: Raubvögel, Raubfische und 
-;Capybara;;;Gräser und Melonen, Zuckerrohr oder Mais aus Plantagen;
-;Eichhörnchen;;;Nüsse;
-;Chinchilla;;;Gräser, Kräuter und Blätter von Sträuchern und Sukkulenten;
+;Biber;;;junge Zweige und Knospen, sowie im Winter die Rinde von Bï¿½umen;Jungtiere: Raubvï¿½gel, Raubfische und 
+;Capybara;;;Grï¿½ser und Melonen, Zuckerrohr oder Mais aus Plantagen;
+;Eichhï¿½rnchen;;;Nï¿½sse;
+;Chinchilla;;;Grï¿½ser, Krï¿½uter und Blï¿½tter von Strï¿½uchern und Sukkulenten;
 ;;;;;
 ;;;;;
 Insekten;Fliege;;;organischen Substanzen, Kleine Insekten;
 ;Biene;;;Nektar;
-;Ameisen;;;Insekten, Pflanzensäften und dem Honigtau von Schildläusen oder Blattläusen;
-;Libelle;;;Insekten aller Art z.B Mücken, Fliegen, kleine Schmetterlinge oder andere Schmeterlinge;
-;Mücke;;;;
-;Schmetterling;;;Pflanzensäften, Honigtau von Läusen oder dem Saft von faulendem Obst.;
+;Ameisen;;;Insekten, Pflanzensï¿½ften und dem Honigtau von Schildlï¿½usen oder Blattlï¿½usen;
+;Libelle;;;Insekten aller Art z.B Mï¿½cken, Fliegen, kleine Schmetterlinge oder andere Schmeterlinge;
+;Mï¿½cke;;;;
+;Schmetterling;;;Pflanzensï¿½ften, Honigtau von Lï¿½usen oder dem Saft von faulendem Obst.;
 ;;;;;
 ;;;;;
 ;;;;;
@@ -90,9 +90,10 @@ Insekten;Fliege;;;organischen Substanzen, Kleine Insekten;
 ;;;;;
 Spinnen;;;;;
 ;;;;;
-;Tarantel;;;Gliederfüßer in passender Größe;
+;Tarantel;;;Gliederfï¿½ï¿½er in passender Grï¿½ï¿½e;
 ;Kellerspinne;;;;
 ;;;;;
 ;;;;;
 ;;;;;
-;Igel;;;Laufkäfer, Insektenlareven, Regenwürmer, Ohrwürmer, Schnecken, Hundert- und Tausendfüßer und Spinnen;
+;Igel;;;Laufkï¿½fer, Insektenlareven, Regenwï¿½rmer, Ohrwï¿½rmer, Schnecken, Hundert- und Tausendfï¿½ï¿½er und Spinnen;
+Gaggalari; 999999999; Jaranert im klo; Eliascheck; Sven;
