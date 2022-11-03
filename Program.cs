@@ -16,8 +16,8 @@ namespace NahrungsnetzAuftrag
         
         static void Main(string[] args)
         {
-            Intro();
-            //Auslesen();
+            //Intro();
+            Auslesen();
         }
         static void Intro()
         {
@@ -42,6 +42,10 @@ namespace NahrungsnetzAuftrag
                 
             }*/
 
+            string prompt = "Willkommen zum scuffed Biologie Menu";
+            string[] options = { "Datenbank","Quiz","Diagramm" };
+            Menu mainMenu = new Menu(prompt, options);
+            int selectedIndex = mainMenu.Run();
             Console.WriteLine("Drücke irgendeine Taste um das Menu zu schliessen.");
             Console.ReadKey(true);
 
@@ -52,7 +56,7 @@ namespace NahrungsnetzAuftrag
         static void Auslesen()
         {
             string DateiPfad = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
-            string[] Zeilen = File.ReadAllLines(DateiPfad);
+            string[] Zeilen = File.ReadAllLines(DateiPfad) ;
 
             string[] Unterordnung = new string[Zeilen.Length];
             string[] Tier = new string[Zeilen.Length];
@@ -110,8 +114,32 @@ namespace NahrungsnetzAuftrag
                     input = Console.ReadLine();
                     if (input == "y")
                     {
-                        Console.Write("ok");
-                        //string[] Neu = new string[]; 
+                        string[] Einspeichern = new string[Zeilen.Length + 1];
+                        Count = 0;
+                        foreach(string zeile in Zeilen)
+                        {
+                            Einspeichern[Count] = zeile;
+                            Count++;
+                        }
+
+                        Temp = new string[6];
+
+                        Console.WriteLine("ok geben sie die daten ein: ");
+                        Console.Write("Zuerst die unterordnung \r\n >>> ");
+                        Temp[0] = Console.ReadLine();
+                        Console.Write("Jetzt das Tier \r\n >>> ");
+                        Temp[1] = Console.ReadLine();
+                        Console.Write("Jetzt das Erwartete Alter \r\n >>> ");
+                        Temp[2] = Console.ReadLine();
+                        Console.Write("Jetzt die Population \r\n >>> ");
+                        Temp[3] = Console.ReadLine();
+                        Console.Write("Jetzt die Nahrung \r\n >>> ");
+                        Temp[4] = Console.ReadLine();
+                        Console.Write("Jetzt die natürlichen Feinde \r\n >>> ");
+                        Temp[5] = Console.ReadLine();
+
+                        Console.WriteLine($"{Temp[0]}; {Temp[2]}; {Temp[3]}; {Temp[4]}; {Temp[5]}");
+                        Console.WriteLine($"Einspeichern[97], true du neger");
                     }
                     else if (input == "n")
                     {
@@ -124,6 +152,17 @@ namespace NahrungsnetzAuftrag
                     Console.Write("Geben sie das Tier erneut ein: ");
                     TierInput = Console.ReadLine();
                 }
+                //--------- Janaret ---------------
+               
+
+                Console.WriteLine("Wilkommen beim Quiz");
+                Console.WriteLine("Wählen Sie bitte eine Schwierigkeitsstufe");
+
+
+                Console.WriteLine("Hier ist die erste Frage");
+
+
+                //--------- Janaret ---------------
             }
 
 
@@ -136,10 +175,7 @@ namespace NahrungsnetzAuftrag
             }
 
         }
-        static void Quiz()
-        {
-
-        }
+        
     }
 }
 
