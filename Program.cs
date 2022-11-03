@@ -96,7 +96,7 @@ namespace NahrungsnetzAuftrag
                     input = Console.ReadLine();
                     if (input == "y")
                     {
-                        string[] Einspeichern = new string[Zeilen.Length + 1];
+                        string[] Einspeichern = new string[Zeilen.Length +1];
                         Count = 0;
                         foreach(string zeile in Zeilen)
                         {
@@ -120,12 +120,8 @@ namespace NahrungsnetzAuftrag
                         Console.Write("Jetzt die natürlichen Feinde \r\n >>> ");
                         Temp[5] = Console.ReadLine();
 
-                        int TempLänge = Einspeichern.Length;
-                        Console.WriteLine(TempLänge);
-                        
-                        Einspeichern[TempLänge] = $"{Temp[0]}; {Temp[2]}; {Temp[3]}; {Temp[4]}; {Temp[5]};";
-                        Console.WriteLine(Einspeichern[97]);
-                        Console.WriteLine($"{Einspeichern[TempLänge]}, Wurde Eingespeichert");
+                        Einspeichern[Einspeichern.Length -1] = $"{Temp[0]};{Temp[1]};{Temp[2]};{Temp[3]};{Temp[4]};{Temp[5]}";
+                        Console.WriteLine($"Added Line: {Einspeichern[Einspeichern.Length -1]}");
 
                         File.WriteAllLines(DateiPfad, Einspeichern);
                         Console.WriteLine("Saved!");

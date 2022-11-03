@@ -96,4 +96,7 @@ Spinnen;;;;;
 ;;;;;
 ;;;;;
 ;Igel;;;Laufk�fer, Insektenlareven, Regenw�rmer, Ohrw�rmer, Schnecken, Hundert- und Tausendf��er und Spinnen;
-Gaggalari; 999999999; Jaranert im klo; Eliascheck; Sven;
+1;3;4;5;6;
+y;f;g;j;t;
+;2;3;4;5;
+y;y;y;y;y;y;
