@@ -16,13 +16,26 @@ namespace NahrungsnetzAuftrag
         
         static void Main(string[] args)
         {
-
-
-
-
+            Intro();
             Auslesen();
-            string[] Zeilen = new string[0];
+        }
+        static void Intro()
+        {
+            Console.WriteLine("Willkommen im Biologie Menu");
 
+            ConsoleKeyInfo keyPressed = Console.ReadKey();
+
+            
+
+            if(keyPressed.Key == ConsoleKey.Enter)
+            {
+                Console.WriteLine("Du hast Enter gedrückt");
+            }
+            else
+            {
+                Console.WriteLine
+                
+            }
         }
 
         static void Auslesen()
@@ -63,15 +76,15 @@ namespace NahrungsnetzAuftrag
                 foreach (var TiereTemp in Tier)
                 {
                     //Console.WriteLine(tiereTemp.Tier);
-                    Count++;
+                    
                     if (TierInput == TiereTemp)
                     {
                         Console.WriteLine($"Gefunden auf Zeile {Count}");
-                        Console.WriteLine($" Unterordnung: {Unterordnung} \r\n Tier: {Tier} \r\n Alter: {Erwartetes_Alter} \r\n Population: {Population} \r\n Nahrung: {Nahrung} \r\n Natürliche Feinde: {Natürliche_Feinde}");
+                        Console.WriteLine($" Unterordnung: {Unterordnung[Count]} \r\n Tier: {Tier[Count]} \r\n Alter: {Erwartetes_Alter[Count]} \r\n Population: {Population[Count]} \r\n Nahrung: {Nahrung[Count]} \r\n Natürliche Feinde: {Natürliche_Feinde[Count]}");
                         temp = true;
                         break;
                     }
-
+                    Count++;
 
                 }
                 if (temp == true)
@@ -83,6 +96,15 @@ namespace NahrungsnetzAuftrag
                 if (input == "y")
                 {
                     Console.WriteLine("Möchten sie es hinzufügen?");
+                    input = Console.ReadLine();
+                    if (input == "y")
+                    {
+                        Console.Write("ok");
+                    }
+                    else if (input == "n")
+                    {
+                        Console.Write("schade");
+                    }
                     break;
                 }
                 else if (input == "n")
