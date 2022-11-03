@@ -21,21 +21,26 @@ namespace NahrungsnetzAuftrag
         }
         static void Intro()
         {
-            Console.WriteLine("Willkommen im Biologie Menu");
+            /*Console.WriteLine("Willkommen im Biologie Menu");
 
             ConsoleKeyInfo keyPressed = Console.ReadKey();
-
-            
-
-            if(keyPressed.Key == ConsoleKey.Enter)
+            if  (keyPressed.Key == ConsoleKey.Enter)
             {
                 Console.WriteLine("Du hast Enter gedrückt");
+                //Auslesen();
             }
-            else
+
+            else if (keyPressed.Key == ConsoleKey.LeftArrow)
+            {
+                Console.WriteLine("Du hast die linke Pfeiltaste gedrückt");
+                //Auslesen();
+            }
+
+            else 
             {
                 Console.WriteLine("andere Taste gedrückt");
                 
-            }
+            }*/
 
             Console.WriteLine("Drücke irgendeine Taste um das Menu zu schliessen.");
             Console.ReadKey(true);
@@ -106,6 +111,7 @@ namespace NahrungsnetzAuftrag
                     if (input == "y")
                     {
                         Console.Write("ok");
+                        //string[] Neu = new string[]; 
                     }
                     else if (input == "n")
                     {
