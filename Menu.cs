@@ -6,5 +6,7 @@ namespace NahrungsnetzAuftrag
 {
     internal class Menu
     {
+        
+
     }
 }

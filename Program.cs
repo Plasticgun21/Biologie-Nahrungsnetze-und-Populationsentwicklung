@@ -32,7 +32,7 @@ namespace NahrungsnetzAuftrag
 
             string[] Unterordnung = new string[Zeilen.Length];
             string[] Tier = new string[Zeilen.Length];
-            string[] Ewartetes_Alter = new string[Zeilen.Length];
+            string[] Erwartetes_Alter = new string[Zeilen.Length];
             string[] Population = new string[Zeilen.Length];
             string[] Nahrung = new string[Zeilen.Length];
             string[] Natürliche_Feinde = new string[Zeilen.Length];
@@ -45,7 +45,7 @@ namespace NahrungsnetzAuftrag
                 Temp = zeile.Split(';');
                 Unterordnung[Count] = Temp[0];
                 Tier[Count] = Temp[1];
-                Ewartetes_Alter[Count] = Temp[2];
+                Erwartetes_Alter[Count] = Temp[2];
                 Population[Count] = Temp[3];
                 Nahrung[Count] = Temp[4];
                 Natürliche_Feinde[Count] = Temp[5];
@@ -54,20 +54,20 @@ namespace NahrungsnetzAuftrag
             }
 
             Console.WriteLine($"Über welches Tier willst du etwas erfahren? In der Datenbank exestieren momentan {Zeilen.Length} Tiere!");
-            string Tier = Console.ReadLine();
+            string TierInput = Console.ReadLine();
 
             while (true)
             {
                 Count = 0;
                 bool temp = false;
-                foreach (var tiereTemp in Tier)
+                foreach (var TiereTemp in Tier)
                 {
                     //Console.WriteLine(tiereTemp.Tier);
                     Count++;
-                    if (tiereTemp.Tier == Tier)
+                    if (TierInput == TiereTemp)
                     {
                         Console.WriteLine($"Gefunden auf Zeile {Count}");
-                        Console.WriteLine($" Unterordnung: {tiereTemp.Unterordnung} \r\n Tier: {tiereTemp.Tier} \r\n Alter: {tiereTemp.Ewartetes_Alter} \r\n Population: {tiereTemp.Population} \r\n Nahrung: {tiereTemp.Nahrung} \r\n Natürliche Feinde: {tiereTemp.Natürliche_Feinde}");
+                        Console.WriteLine($" Unterordnung: {Unterordnung} \r\n Tier: {Tier} \r\n Alter: {Erwartetes_Alter} \r\n Population: {Population} \r\n Nahrung: {Nahrung} \r\n Natürliche Feinde: {Natürliche_Feinde}");
                         temp = true;
                         break;
                     }
@@ -79,7 +79,7 @@ namespace NahrungsnetzAuftrag
                     break;
                 }
                 Console.WriteLine("Tier wurde nicht gefunden haben sie es richtig geschrieben? y | n");
-                input = Console.ReadLine();
+                string input = Console.ReadLine();
                 if (input == "y")
                 {
                     Console.WriteLine("Möchten sie es hinzufügen?");
@@ -88,7 +88,7 @@ namespace NahrungsnetzAuftrag
                 else if (input == "n")
                 {
                     Console.Write("Geben sie das Tier erneut ein: ");
-                    Tier = Console.ReadLine();
+                    TierInput = Console.ReadLine();
                 }
             }
 
@@ -98,7 +98,7 @@ namespace NahrungsnetzAuftrag
 
             foreach (string z in Tier)
             {
-                Console.WriteLine(z);
+                //Console.WriteLine(z);
             }
 
         }
