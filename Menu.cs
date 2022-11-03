@@ -6,7 +6,8 @@ namespace NahrungsnetzAuftrag
 {
     internal class Menu
     {
-        
+        private int SelectedIndex;
+        private string
 
     }
 }
