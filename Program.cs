@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
+using System.Timers;
 using static System.Net.WebRequestMethods;
 using File = System.IO.File;
 
@@ -12,68 +13,54 @@ namespace NahrungsnetzAuftrag
 {
     internal class Program
     {
+        
         static void Main(string[] args)
         {
-            DatenbankAusgebenBesser();
-        }
 
-        static void DatenbankAusgeben()
-        {
-            Console.OutputEncoding = Encoding.Unicode;
-            string Tier;
-            string file = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
-            List<string> lines = File.ReadAllLines(file).ToList();
-            Console.WriteLine("Über welches Tier willst du etwas erfahren?");
-            Tier = Console.ReadLine();
 
-            foreach (string Zeile in lines)
-            {
-                string[] entries = Zeile.Split(';');
-            }
+
+
+            Auslesen();
+            string[] Zeilen = new string[0];
 
         }
 
-        static void DatenbankAusgebenBesser()
+        static void Auslesen()
         {
-            Console.OutputEncoding = Encoding.Unicode;
-            string Tier;
+            string DateiPfad = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
+            string[] Zeilen = File.ReadAllLines(DateiPfad);
+
+            string[] Unterordnung = new string[Zeilen.Length];
+            string[] Tier = new string[Zeilen.Length];
+            string[] Ewartetes_Alter = new string[Zeilen.Length];
+            string[] Population = new string[Zeilen.Length];
+            string[] Nahrung = new string[Zeilen.Length];
+            string[] Natürliche_Feinde = new string[Zeilen.Length];
+
             int Count = 0;
-            bool temp = false;
-            string input;
-            string file = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
+            string[] Temp = new string[5];
 
-            List<Typen> tiere = new List<Typen>();
-            List<string> lines = File.ReadAllLines(file).ToList();
-
-            int AnzahlTiereTemp = File.ReadAllLines(file).Count();
-            
-            Console.WriteLine($"Über welches Tier willst du etwas erfahren? In der Datenbank exestieren momentan {AnzahlTiereTemp} Tiere!");
-            Tier = Console.ReadLine();
-
-            
-
-            foreach (var Zeile in lines)
+            foreach (string zeile in Zeilen)
             {
-                string[] einträge = Zeile.Split(';');
-                Typen newTypen = new Typen();
-                newTypen.Unterordnung = einträge[0];
-                newTypen.Tier = einträge[1];
-                newTypen.Ewartetes_Alter = einträge[2];
-                newTypen.Population = einträge[3];
-                newTypen.Nahrung = einträge[4];
-                newTypen.Natürliche_Feinde = einträge[5];
+                Temp = zeile.Split(';');
+                Unterordnung[Count] = Temp[0];
+                Tier[Count] = Temp[1];
+                Ewartetes_Alter[Count] = Temp[2];
+                Population[Count] = Temp[3];
+                Nahrung[Count] = Temp[4];
+                Natürliche_Feinde[Count] = Temp[5];
+                Count++;
 
-                tiere.Add(newTypen);
-
-                
             }
 
+            Console.WriteLine($"Über welches Tier willst du etwas erfahren? In der Datenbank exestieren momentan {Zeilen.Length} Tiere!");
+            string Tier = Console.ReadLine();
 
             while (true)
             {
                 Count = 0;
-                temp = false;
-                foreach (var tiereTemp in tiere)
+                bool temp = false;
+                foreach (var tiereTemp in Tier)
                 {
                     //Console.WriteLine(tiereTemp.Tier);
                     Count++;
@@ -85,14 +72,15 @@ namespace NahrungsnetzAuftrag
                         break;
                     }
 
+
                 }
-                if(temp == true)
+                if (temp == true)
                 {
                     break;
                 }
                 Console.WriteLine("Tier wurde nicht gefunden haben sie es richtig geschrieben? y | n");
                 input = Console.ReadLine();
-                if(input == "y")
+                if (input == "y")
                 {
                     Console.WriteLine("Möchten sie es hinzufügen?");
                     break;
@@ -104,12 +92,18 @@ namespace NahrungsnetzAuftrag
                 }
             }
 
-            
-            
+
+
             Console.WriteLine("------------- Ende ---------------");
 
-            
+            foreach (string z in Tier)
+            {
+                Console.WriteLine(z);
+            }
 
+        }
+        static void Quiz()
+        {
 
         }
     }
