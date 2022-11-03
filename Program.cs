@@ -17,7 +17,7 @@ namespace NahrungsnetzAuftrag
         static void Main(string[] args)
         {
             Intro();
-            Auslesen();
+            //Auslesen();
         }
         static void Intro()
         {
@@ -33,9 +33,15 @@ namespace NahrungsnetzAuftrag
             }
             else
             {
-                Console.WriteLine
+                Console.WriteLine("andere Taste gedrückt")
                 
             }
+
+            Console.WriteLine("Drücke irgendeine TAste um das Menu zu schliessen.")
+            ReadKey(true);
+
+
+
         }
 
         static void Auslesen()
