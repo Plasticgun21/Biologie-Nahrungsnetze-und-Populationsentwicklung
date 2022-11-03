@@ -17,7 +17,8 @@ namespace NahrungsnetzAuftrag
         static void Main(string[] args)
         {
             Intro();
-            Auslesen();
+            
+            
         }
         static void Intro()
         {
@@ -28,8 +29,22 @@ namespace NahrungsnetzAuftrag
             string[] options = { "Datenbank","Quiz","Diagramm" };
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
-            Console.WriteLine("Drücke irgendeine Taste um das Menu zu schliessen.");
-            Console.ReadKey(true);
+
+            if(selectedIndex == 0)
+            {
+                Console.Clear();
+                Auslesen();
+            }
+            else if(selectedIndex == 1)
+            {
+                Console.WriteLine("nichts zu sehen :)");
+                System.Environment.Exit(1);
+            }
+            else if(selectedIndex == 2)
+            {
+                Console.WriteLine("nichts zu sehen :)");
+                System.Environment.Exit(1);
+            }
 
 
 
@@ -92,7 +107,7 @@ namespace NahrungsnetzAuftrag
                 string input = Console.ReadLine();
                 if (input == "y")
                 {
-                    Console.WriteLine("Möchten sie es hinzufügen?");
+                    Console.WriteLine("Dieses Tier exestiert nicht in der Datenbank. Möchten sie es hinzufügen?");
                     input = Console.ReadLine();
                     if (input == "y")
                     {
@@ -105,6 +120,8 @@ namespace NahrungsnetzAuftrag
                         }
 
                         Temp = new string[6];
+
+                        Console.Clear();
 
                         Console.WriteLine("ok geben sie die daten ein: ");
                         Console.Write("Zuerst die unterordnung \r\n >>> ");
