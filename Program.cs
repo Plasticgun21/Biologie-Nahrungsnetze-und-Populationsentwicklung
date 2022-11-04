@@ -38,7 +38,8 @@ namespace NahrungsnetzAuftrag
             else if(selectedIndex == 1)
             {
                 Console.WriteLine("nichts zu sehen :)");
-                System.Environment.Exit(1);
+                Quitz();
+                //System.Environment.Exit(1);
             }
             else if(selectedIndex == 2)
             {
@@ -157,22 +158,47 @@ namespace NahrungsnetzAuftrag
                 
             }
             
-            //--------- Quitz ---------------
+            Console.WriteLine("------------- Ende ---------------");
 
+        }
+        static void Quitz()
+        {
+            string DateiPfad = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
+            string[] Zeilen = File.ReadAllLines(DateiPfad);
+
+            string[] Unterordnung = new string[Zeilen.Length];
+            string[] Tier = new string[Zeilen.Length];
+            string[] Erwartetes_Alter = new string[Zeilen.Length];
+            string[] Population = new string[Zeilen.Length];
+            string[] Nahrung = new string[Zeilen.Length];
+            string[] Natürliche_Feinde = new string[Zeilen.Length];
+
+            int Count = 0;
+            string[] Temp = new string[5];
+
+            foreach (string zeile in Zeilen)
+            {
+                Temp = zeile.Split(';');
+                Unterordnung[Count] = Temp[0];
+                Tier[Count] = Temp[1];
+                Erwartetes_Alter[Count] = Temp[2];
+                Population[Count] = Temp[3];
+                Nahrung[Count] = Temp[4];
+                Natürliche_Feinde[Count] = Temp[5];
+                Count++;
+
+            }
+
+            string prompt = "\r\n ██████╗ ██╗   ██╗██╗████████╗███████╗\r\n██╔═══██╗██║   ██║██║╚══██╔══╝╚══███╔╝\r\n██║   ██║██║   ██║██║   ██║     ███╔╝ \r\n██║▄▄ ██║██║   ██║██║   ██║    ███╔╝  \r\n╚██████╔╝╚██████╔╝██║   ██║   ███████╗\r\n ╚══▀▀═╝  ╚═════╝ ╚═╝   ╚═╝   ╚══════╝\r\n                                      \r\n";
+            string[] options = { "Schwer", "Mittel", "Einfach" };
+            Menu mainMenu = new Menu(prompt, options);
+            int selectedIndex = mainMenu.Run();
 
             Console.WriteLine("Wilkommen beim Quiz");
             Console.WriteLine("Wählen Sie bitte eine Schwierigkeitsstufe");
 
 
             Console.WriteLine("Hier ist die erste Frage");
-
-
-
-            //--------- Quitz ---------------
-
-
-            Console.WriteLine("------------- Ende ---------------");
-
         }
         
     }
