@@ -79,9 +79,63 @@ namespace NahrungsnetzAuftrag
             }
 
             string prompt = "██████╗  █████╗ ████████╗███████╗███╗   ██╗██████╗  █████╗ ███╗   ██╗██╗  ██╗\r\n██╔══██╗██╔══██╗╚══██╔══╝██╔════╝████╗  ██║██╔══██╗██╔══██╗████╗  ██║██║ ██╔╝\r\n██║  ██║███████║   ██║   █████╗  ██╔██╗ ██║██████╔╝███████║██╔██╗ ██║█████╔╝ \r\n██║  ██║██╔══██║   ██║   ██╔══╝  ██║╚██╗██║██╔══██╗██╔══██║██║╚██╗██║██╔═██╗ \r\n██████╔╝██║  ██║   ██║   ███████╗██║ ╚████║██████╔╝██║  ██║██║ ╚████║██║  ██╗\r\n╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝";
-            string[] options = { "Suchen", "Daten Erweitern"};
+            string[] options = { "Suchen", "Daten Erweitern", "Zurück"};
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
+
+            bool EinspeicherVal = false;
+
+            if (selectedIndex == 0)
+            {
+                Console.Clear();
+                EinspeicherVal = false;
+            }
+            else if (selectedIndex == 1)
+            {
+                Console.Clear();
+                EinspeicherVal = true;
+            }
+            else if (selectedIndex == 2)
+            {
+                Console.Clear();
+                Intro();
+            }
+
+            while (EinspeicherVal)
+            {
+                string[] Einspeichern = new string[Zeilen.Length + 1];
+                Count = 0;
+                foreach (string zeile in Zeilen)
+                {
+                    Einspeichern[Count] = zeile;
+                    Count++;
+                }
+
+                Temp = new string[6];
+
+                Console.Clear();
+
+                Console.WriteLine("ok geben sie die daten ein: ");
+                Console.Write("Zuerst die unterordnung \r\n >>> ");
+                Temp[0] = Console.ReadLine();
+                Console.Write("Jetzt das Tier \r\n >>> ");
+                Temp[1] = Console.ReadLine();
+                Console.Write("Jetzt das Erwartete Alter \r\n >>> ");
+                Temp[2] = Console.ReadLine();
+                Console.Write("Jetzt die Population \r\n >>> ");
+                Temp[3] = Console.ReadLine();
+                Console.Write("Jetzt die Nahrung \r\n >>> ");
+                Temp[4] = Console.ReadLine();
+                Console.Write("Jetzt die natürlichen Feinde \r\n >>> ");
+                Temp[5] = Console.ReadLine();
+
+                Einspeichern[Einspeichern.Length - 1] = $"{Temp[0]};{Temp[1]};{Temp[2]};{Temp[3]};{Temp[4]};{Temp[5]}";
+                Console.WriteLine($"Added Line: {Einspeichern[Einspeichern.Length - 1]}");
+
+                File.WriteAllLines(DateiPfad, Einspeichern);
+                Console.WriteLine("Saved!");
+                System.Environment.Exit(1);
+            }
 
             Console.WriteLine($"Über welches Tier willst du etwas erfahren? In der Datenbank exestieren momentan {Zeilen.Length} Tiere!");
             string TierInput = Console.ReadLine();
@@ -194,7 +248,7 @@ namespace NahrungsnetzAuftrag
             }
 
             string prompt = " ██████╗ ██╗   ██╗██╗████████╗███████╗\r\n██╔═══██╗██║   ██║██║╚══██╔══╝╚══███╔╝\r\n██║   ██║██║   ██║██║   ██║     ███╔╝ \r\n██║▄▄ ██║██║   ██║██║   ██║    ███╔╝  \r\n╚██████╔╝╚██████╔╝██║   ██║   ███████╗\r\n ╚══▀▀═╝  ╚═════╝ ╚═╝   ╚═╝   ╚══════╝";
-            string[] options = { "Schwer", "Mittel", "Einfach" };
+            string[] options = { "Schwer", "Mittel", "Einfach", "Zurück" };
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
 
@@ -212,6 +266,11 @@ namespace NahrungsnetzAuftrag
             {
                 Console.WriteLine("Hier gibts nichts zu sehen :)");
                 System.Environment.Exit(1);
+            }
+            else if (selectedIndex == 3)
+            {
+                Console.Clear();
+                Auslesen();
             }
 
             Console.WriteLine("Hier ist die erste Frage");
