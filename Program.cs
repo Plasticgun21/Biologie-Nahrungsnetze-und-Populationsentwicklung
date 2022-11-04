@@ -25,7 +25,7 @@ namespace NahrungsnetzAuftrag
             Console.WriteLine("Willkommen im Biologie Menu");
             Console.WriteLine("Sie können mit den Pfeiltasten im Biologie Menu navigieren");
 
-            string prompt = "██████╗ ██╗ ██████╗ ██╗      ██████╗  ██████╗ ██╗███████╗\r\n██╔══██╗██║██╔═══██╗██║     ██╔═══██╗██╔════╝ ██║██╔════╝\r\n██████╔╝██║██║   ██║██║     ██║   ██║██║  ███╗██║█████╗  \r\n██╔══██╗██║██║   ██║██║     ██║   ██║██║   ██║██║██╔══╝  \r\n██████╔╝██║╚██████╔╝███████╗╚██████╔╝╚██████╔╝██║███████╗\r\n╚═════╝ ╚═╝ ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝╚══════╝\r\n                                                         ";
+            string prompt = "███╗   ██╗ █████╗ ██╗  ██╗██████╗ ██╗   ██╗███╗   ██╗ ██████╗ ███████╗███╗   ██╗███████╗████████╗███████╗\r\n████╗  ██║██╔══██╗██║  ██║██╔══██╗██║   ██║████╗  ██║██╔════╝ ██╔════╝████╗  ██║██╔════╝╚══██╔══╝╚══███╔╝\r\n██╔██╗ ██║███████║███████║██████╔╝██║   ██║██╔██╗ ██║██║  ███╗███████╗██╔██╗ ██║█████╗     ██║     ███╔╝ \r\n██║╚██╗██║██╔══██║██╔══██║██╔══██╗██║   ██║██║╚██╗██║██║   ██║╚════██║██║╚██╗██║██╔══╝     ██║    ███╔╝  \r\n██║ ╚████║██║  ██║██║  ██║██║  ██║╚██████╔╝██║ ╚████║╚██████╔╝███████║██║ ╚████║███████╗   ██║   ███████╗\r\n╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚══════╝";
             string[] options = { "Datenbank","Quiz","Diagramm" };
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
@@ -37,13 +37,12 @@ namespace NahrungsnetzAuftrag
             }
             else if(selectedIndex == 1)
             {
-                Console.WriteLine("nichts zu sehen :)");
+                Console.Clear();
                 Quitz();
-                //System.Environment.Exit(1);
             }
             else if(selectedIndex == 2)
             {
-                Console.WriteLine("nichts zu sehen :)");
+                Console.WriteLine("Hier gibts nichts zu sehen :)");
                 System.Environment.Exit(1);
             }
 
@@ -78,6 +77,11 @@ namespace NahrungsnetzAuftrag
                 Count++;
 
             }
+
+            string prompt = "██████╗  █████╗ ████████╗███████╗███╗   ██╗██████╗  █████╗ ███╗   ██╗██╗  ██╗\r\n██╔══██╗██╔══██╗╚══██╔══╝██╔════╝████╗  ██║██╔══██╗██╔══██╗████╗  ██║██║ ██╔╝\r\n██║  ██║███████║   ██║   █████╗  ██╔██╗ ██║██████╔╝███████║██╔██╗ ██║█████╔╝ \r\n██║  ██║██╔══██║   ██║   ██╔══╝  ██║╚██╗██║██╔══██╗██╔══██║██║╚██╗██║██╔═██╗ \r\n██████╔╝██║  ██║   ██║   ███████╗██║ ╚████║██████╔╝██║  ██║██║ ╚████║██║  ██╗\r\n╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝";
+            string[] options = { "Suchen", "Daten Erweitern"};
+            Menu mainMenu = new Menu(prompt, options);
+            int selectedIndex = mainMenu.Run();
 
             Console.WriteLine($"Über welches Tier willst du etwas erfahren? In der Datenbank exestieren momentan {Zeilen.Length} Tiere!");
             string TierInput = Console.ReadLine();
@@ -189,14 +193,26 @@ namespace NahrungsnetzAuftrag
 
             }
 
-            string prompt = "\r\n ██████╗ ██╗   ██╗██╗████████╗███████╗\r\n██╔═══██╗██║   ██║██║╚══██╔══╝╚══███╔╝\r\n██║   ██║██║   ██║██║   ██║     ███╔╝ \r\n██║▄▄ ██║██║   ██║██║   ██║    ███╔╝  \r\n╚██████╔╝╚██████╔╝██║   ██║   ███████╗\r\n ╚══▀▀═╝  ╚═════╝ ╚═╝   ╚═╝   ╚══════╝\r\n                                      \r\n";
+            string prompt = " ██████╗ ██╗   ██╗██╗████████╗███████╗\r\n██╔═══██╗██║   ██║██║╚══██╔══╝╚══███╔╝\r\n██║   ██║██║   ██║██║   ██║     ███╔╝ \r\n██║▄▄ ██║██║   ██║██║   ██║    ███╔╝  \r\n╚██████╔╝╚██████╔╝██║   ██║   ███████╗\r\n ╚══▀▀═╝  ╚═════╝ ╚═╝   ╚═╝   ╚══════╝";
             string[] options = { "Schwer", "Mittel", "Einfach" };
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
 
-            Console.WriteLine("Wilkommen beim Quiz");
-            Console.WriteLine("Wählen Sie bitte eine Schwierigkeitsstufe");
-
+            if (selectedIndex == 0)
+            {
+                Console.WriteLine("Hier gibts nichts zu sehen :)");
+                System.Environment.Exit(1);
+            }
+            else if (selectedIndex == 1)
+            {
+                Console.WriteLine("Hier gibts nichts zu sehen :)");
+                System.Environment.Exit(1);
+            }
+            else if (selectedIndex == 2)
+            {
+                Console.WriteLine("Hier gibts nichts zu sehen :)");
+                System.Environment.Exit(1);
+            }
 
             Console.WriteLine("Hier ist die erste Frage");
         }
