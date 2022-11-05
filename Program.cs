@@ -115,17 +115,17 @@ namespace NahrungsnetzAuftrag
                 Console.Clear();
 
                 Console.WriteLine("ok geben sie die daten ein: ");
-                Console.Write("Zuerst die unterordnung \r\n >>> ");
+                Console.Write("Zuerst die unterordnung \r\n>>> ");
                 Temp[0] = Console.ReadLine();
-                Console.Write("Jetzt das Tier \r\n >>> ");
+                Console.Write("Jetzt das Tier \r\n>>> ");
                 Temp[1] = Console.ReadLine();
-                Console.Write("Jetzt das Erwartete Alter \r\n >>> ");
+                Console.Write("Jetzt das Erwartete Alter \r\n>>> ");
                 Temp[2] = Console.ReadLine();
-                Console.Write("Jetzt die Population \r\n >>> ");
+                Console.Write("Jetzt die Population \r\n>>> ");
                 Temp[3] = Console.ReadLine();
-                Console.Write("Jetzt die Nahrung \r\n >>> ");
+                Console.Write("Jetzt die Nahrung \r\n>>> ");
                 Temp[4] = Console.ReadLine();
-                Console.Write("Jetzt die natürlichen Feinde \r\n >>> ");
+                Console.Write("Jetzt die natürlichen Feinde \r\n>>> ");
                 Temp[5] = Console.ReadLine();
 
                 Einspeichern[Einspeichern.Length - 1] = $"{Temp[0]};{Temp[1]};{Temp[2]};{Temp[3]};{Temp[4]};{Temp[5]}";
@@ -182,17 +182,17 @@ namespace NahrungsnetzAuftrag
                         Console.Clear();
 
                         Console.WriteLine("ok geben sie die daten ein: ");
-                        Console.Write("Zuerst die unterordnung \r\n >>> ");
+                        Console.Write("Zuerst die unterordnung \r\n>>> ");
                         Temp[0] = Console.ReadLine();
                         Console.Write("Jetzt das Tier \r\n >>> ");
                         Temp[1] = Console.ReadLine();
-                        Console.Write("Jetzt das Erwartete Alter \r\n >>> ");
+                        Console.Write("Jetzt das Erwartete Alter \r\n>>> ");
                         Temp[2] = Console.ReadLine();
-                        Console.Write("Jetzt die Population \r\n >>> ");
+                        Console.Write("Jetzt die Population \r\n>>> ");
                         Temp[3] = Console.ReadLine();
-                        Console.Write("Jetzt die Nahrung \r\n >>> ");
+                        Console.Write("Jetzt die Nahrung \r\n>>> ");
                         Temp[4] = Console.ReadLine();
-                        Console.Write("Jetzt die natürlichen Feinde \r\n >>> ");
+                        Console.Write("Jetzt die natürlichen Feinde \r\n>>> ");
                         Temp[5] = Console.ReadLine();
 
                         Einspeichern[Einspeichern.Length -1] = $"{Temp[0]};{Temp[1]};{Temp[2]};{Temp[3]};{Temp[4]};{Temp[5]}";
