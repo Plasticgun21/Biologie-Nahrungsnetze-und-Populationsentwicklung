@@ -6,11 +6,14 @@
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
 |       | 0.0.1   | Wir haben unseres Thema ausgewählt und ich Luca hat Herr Siegrist für Anforderungen gefragt.|
-|       | ...     |                                                              |
+|       | 0.1.1   | Die Datenbank kann nun eingelesen werden und es wird alles mehr oder weniger ausgegeben.|
+|       | 0.1.2   | Man kann nun über das neu erstellte Menu auf die 3 verschiedenen Programme zugreifen, man kann jetzt auch nicht vorhandene Tiere hinzufügen.|
+|       | 0.1.    |                                                              |
+|       | 0.1.    |                                                              |
 |       | 1.0.0   |                                                              |
 
 ## 1 Informieren
-das ist ein text
+
 
 ### 1.1 Ihr Projekt
 
@@ -18,14 +21,14 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 
 ## 1.2 User Stories
 
-### 1.2.1 User Stories für 1. Projekt
+### 1.2.1 User Stories für 1. Projekt (Nahrungsnetz)
 
 | US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |      muss       | Funktion | Ich möchte, dass eine Datenbank eingelesen wird, damit man die Informationen sehen kann. | 
-| 2    |      muss       | Funktion | Ich möchte, dass man ein Lebewesen, über das man etwas erfahren will, einlesen kann, damit man schlauer wird.  | 
-| 3    |      muss       | Funktion | Ich möchte, dass der Name des Lebwesens angezeigt wird und darunter Familie, Nahrung und feinde angezeigt werden.|
-| 4    |      muss       | Funktion | Ich möchte, dass der Nutzer gefragt wird ob ein weiteres Lebewesen eingelesen werden soll, damit man noch schlauer werden kann. |
+| 1    |      muss       | Funktion | Ich möchte, dass eine Datenbank eingelesen wird, damit die Informationen vorhanden sind. |
+| 2    |      muss       | Funktion | Ich möchte, dass man ein Lebewesen, über das man etwas erfahren will wählen kann, dass man das Programm benutzen kann.  | 
+| 3    |      muss       | Funktion | Ich möchte, dass der Name des Lebwesens angezeigt wird und darunter Familie, Nahrung, Feinde etc. angezeigt werden.|
+| 4    |      muss | Funktion | Ich möchte, dass bei einem nicht vorhandenen Tier gefragt wird ob man es hinzufügen möchte, dass der Nutzer unvollständigkeit beheben kann.|
 | 5    |      kann       | Funktion | Ich möchte, dass Falscheingaben mit catch if behandelt werden, dass das Programm nicht abstürzt.|
 | 6    |      kann       | Funktion | Ich möchte, dass bei Eingaben die nicht genau dem Tier entsprechen vorgeschlagen wird, was man sonnst suchen könnte.|
 | 7    |      kann       | Funktion | Ich möchte, dass der Benutzer alle Tiere geordnet ausgeben kann, damit er einen Überblick hat.|
@@ -43,7 +46,11 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 3    |      muss       | Funktion | Ich möchte, dass der Nutzer zwischen richtig und falsch auswählen kann, dass er antworten kann.|
 | 4    |      muss       | Funktion | Ich möchte, dass die Anwort mit der Lösung verglichen wird und ausgegeben wird ob es die richtige Antwort ist, damit der Nutzer weiss ob er richtig war.|
 | 5    |      muss       | Funktion | Ich möchte, dass gefragt wird ob der Nutzer die nächste Frage beantworten will, damit er weiterspielen kann.|
-| 6    |      muss       | Funktion | Ich möchte, dass dem Benutzer am schluss vom Quiz gratuliert wird und für eine weitere Runde gefragt wird.|
+| 6    |      kann       | Funktion | Ich möchte, dass dem Benutzer am schluss vom Quiz gratuliert wird und für eine weitere Runde gefragt wird.|
+| 7    |      kann       | Funktion | Ich möchte, dass der Benutzer die Möglichkeit gegeben wird den Schwierigkeitsgrad im Menu einzustellen, dass es schwerer wird.|
+| 8    |      kann       | Funktion | Ich möchte, dass der einfachere Modus einfachere Fragen erstellt, dass es fair ist.|
+| 9    |      kann       | Funktion | Ich möchte, dass der schwere Modus kompliziertere Fragen stellt, dass man herausgefordert wird.|
+
 
 
 ### 1.2.3 User Stories für 3. Projekt
@@ -94,20 +101,60 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 
 ### 1.4 Diagramme
 
-✍️ Hier können Sie PAPs, Use Case- und Gantt-Diagramme oder Ähnliches einfügen.
+
 
 ## 2 Planen
 
+# 2.1 Planen vom Nahrungsnetz
+
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |29.9.22| alle          | Das Programm soll die Datenbank anzeigen mit Nahrungsnetz | 240 min. |
-| 2.A  |30.9.22| alle          | Das Programm soll die Datenbank anzeigen mit Informationen | 60 min. |
+| 1.A  |20.10.22| Niclas     | Die Datenbank einlesen.  | 240 min. |
+| 2.B  |27.10.22| Niclas     | Eingabe von einem Tier. | 60 min. |
+| 3.C  |27.10.22| Niclas     | Ausgabe vom Nahrungsnetz des gesuchten Tieres.   | 120 min. |
+| 4.D  |03.11.22| Niclas     | Frage ob ein nicht gefundenes Tier eingetragen werden soll.   | 240 min. |
+| .E  |03.11.22| Elias      | Menu erstellen, wo man auswählen kann welches Programm gestartet wird. | 240 min. |
+| 2.F  |06.11.22|            |     |  min. |
+| 2.G  |06.11.22|            |     |  min. |
+| 2.H  |.11.22| alle      | | 60 min. |
+| 2.I  |.11.22| alle      | | 60 min. |
+| 2.J  |.11.22| alle      | | 60 min. |
+
+### 2.1 Planen vom Quiz
+
+| AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
+| ---- | ----- | --------- | ------------ | ------------- |
+| 1.A  |03.11.22| Luca     |  | 240 min. |
+| 2.B  |27.10.22| Luca     |  | 60 min. |
+| 3.C  |27.10.22| Luca     |  | 120 min. |
+| 4.D  |03.11.22| Luca     |  | 240 min. |
+| 2.E  |03.11.22| Luca     |  | 240 min. |
+| 2.F  |03.11.22| Luca     |  | 60 min. |
+| 2.G  |30.9.22| alle      |  | 60 min. |
+| 2.H  |30.9.22| alle      |  | 60 min. |
+| 2.I  |30.9.22| alle      |  | 60 min. |
+| 2.J  |30.9.22| alle      |  | 60 min. |
+
+### 2.1 Planen vom Populationsdiagramm
+
+| AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
+| ---- | ----- | --------- | ------------ | ------------- |
+| 1.A  |20.10.22| Niclas     | Die Datenbank einlesen.  | 240 min. |
+| 2.B  |27.10.22| Niclas     | Eingabe von einem Tier. | 60 min. |
+| 3.C  |27.10.22| Niclas     | Ausgabe vom Nahrungsnetz des gesuchten Tieres.   | 120 min. |
+| 4.D  |03.11.22| Niclas     | Frage ob ein nicht gefundenes Tier eingetragen werden soll.   | 240 min. |
+| 2.E  |03.11.22| Elias      | Menu erstellen, wo man auswählen kann welches Programm gestartet wird. | 240 min. |
+| 2.F  |03.11.22| Luca       | | 60 min. |
+| 2.G  |30.9.22| alle      | | 60 min. |
+| 2.H  |30.9.22| alle      | | 60 min. |
+| 2.I  |30.9.22| alle      | | 60 min. |
+| 2.J  |30.9.22| alle      | | 60 min. |
 
 Total: 
 
 ## 3 Entscheiden
 
-✍️ Dokumentieren Sie hier Ihre Entscheidungen und Annahmen, die Sie im Bezug auf Ihre User Stories und die Implementierung getroffen haben.
+Wir haben und dazu entscheiden alle 3 Programme in einem Programm zu schreiben, und mit einem Menu zu arbeiten, mit dem man die verschiedenen Dinge auswählen kann.
 
 ## 4 Realisieren
 
