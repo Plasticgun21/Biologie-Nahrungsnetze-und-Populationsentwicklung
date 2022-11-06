@@ -146,7 +146,7 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 2.E  |03.11.22| Elias      | Menu erstellen, wo man auswählen kann welches Programm gestartet wird. | 240 min. |
 | 2.F  |03.11.22| Luca       | | 60 min. |
 | 5.G  |10.11.22| Niclas     | Mit try und catch, Fehlereingaben abfangen | 60 min. |
-| 2.H  |30.9.22| alle      | | 60 min. |
+| 6.H  |10.11.22| Nicls      | Es wird gespeichert, nach welchem Tier gesucht wurde | 60 min. |
 | 2.I  |30.9.22| alle      | | 60 min. |
 | 2.J  |30.9.22| alle      | | 60 min. |
 
