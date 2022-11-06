@@ -28,7 +28,7 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 1    |      muss       | Funktion | Ich möchte, dass eine Datenbank eingelesen wird, damit die Informationen vorhanden sind. |
 | 2    |      muss       | Funktion | Ich möchte, dass man ein Lebewesen, über das man etwas erfahren will wählen kann, dass man das Programm benutzen kann.  | 
 | 3    |      muss       | Funktion | Ich möchte, dass der Name des Lebwesens angezeigt wird und darunter Familie, Nahrung, Feinde etc. angezeigt werden.|
-| 4    |      muss | Funktion | Ich möchte, dass bei einem nicht vorhandenen Tier gefragt wird ob man es hinzufügen möchte, dass der Nutzer unvollständigkeit beheben kann.|
+| 4    |      muss       | Funktion | Ich möchte, dass bei einem nicht vorhandenen Tier gefragt wird ob man es hinzufügen möchte, dass der Nutzer unvollständigkeit beheben kann.|
 | 5    |      kann       | Funktion | Ich möchte, dass Falscheingaben mit try, catch behandelt werden, dass das Programm nicht abstürzt.|
 | 6    |      kann       | Funktion | Ich möchte, dass bei Eingaben die nicht genau dem Tier entsprechen vorgeschlagen wird, was man sonnst suchen könnte.|
 | 7    |      kann       | Funktion | Ich möchte, dass der Benutzer alle Tiere geordnet ausgeben kann, damit er einen Überblick hat.|
@@ -145,7 +145,7 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 4.D  |03.11.22| Niclas     | Frage ob ein nicht gefundenes Tier eingetragen werden soll.   | 240 min. |
 | 2.E  |03.11.22| Elias      | Menu erstellen, wo man auswählen kann welches Programm gestartet wird. | 240 min. |
 | 2.F  |03.11.22| Luca       | | 60 min. |
-| 2.G  |30.9.22| alle      | | 60 min. |
+| 5.G  |10.11.22| Niclas     | Mit try und catch, Fehlereingaben abfangen | 60 min. |
 | 2.H  |30.9.22| alle      | | 60 min. |
 | 2.I  |30.9.22| alle      | | 60 min. |
 | 2.J  |30.9.22| alle      | | 60 min. |
