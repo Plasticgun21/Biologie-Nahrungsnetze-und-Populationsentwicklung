@@ -114,8 +114,8 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 3.C  |27.10.22| Niclas     | Ausgabe vom Nahrungsnetz des gesuchten Tieres.   | 120 min. |
 | 4.D  |03.11.22| Niclas     | Frage ob ein nicht gefundenes Tier eingetragen werden soll.   | 240 min. |
 | .E  |03.11.22| Elias       | Menu erstellen, wo man auswählen kann welches Programm gestartet wird. | 240 min. |
-| 2.F  |06.11.22|            |     |  min. |
-| 2.G  |06.11.22|            |     |  min. |
+| 5.F  |10.11.22| Niclas     | Mit try und catch, Fehlereingaben abfangen | 60 min. |
+| 6.G  |10.11.22| Nicls      | Es wird gespeichert, nach welchem Tier gesucht wurde | 240 min. |
 | 2.H  |.11.22| alle      | | 60 min. |
 | 2.I  |.11.22| alle      | | 60 min. |
 | 2.J  |.11.22| alle      | | 60 min. |
