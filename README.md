@@ -94,9 +94,11 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 3.1  | Das Programm läuft und fragt um die Werte einzugeben. | 10 | Zeigt erstes Jahr. |
+| 3.1  | Das Programm läuft und fragt um die Werte einzugeben. | 10/4 | Zeigt erstes Jahr. |
 | 3.2  | Das Programm läuft und erstes Jahr ist angezeigt. | Enter | Zeigt zweites Jahr. |
-| 3.3  | 
+| 3.3  | Das Programm läuft, das zweites Jahr wird angezeigt und fragt ob man ein drittes Jahr will. | y | Zeigt drittes Jahr. |
+| 3.4  | Das Programm läuft, das dritte Jahr wird angezeigt und fragt ob man ein viertes Jahr will. | n | Geht zurück zum Menü. |
+| 3.5  | Das Programm läuft und es fragt ob man neue Werte hinzufügen will. | n | Programm schliesst. |
 
 
 ### 1.4 Diagramme
@@ -110,15 +112,17 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
 | 1.A  |20.10.22| Niclas     | Die Datenbank einlesen.  | 240 min. |
-| 2.B  |27.10.22| Niclas     | Eingabe von einem Tier. | 60 min. |
-| 3.C  |27.10.22| Niclas     | Ausgabe vom Nahrungsnetz des gesuchten Tieres.   | 120 min. |
-| 4.D  |03.11.22| Niclas     | Frage ob ein nicht gefundenes Tier eingetragen werden soll.   | 240 min. |
-| .E  |03.11.22| Elias       | Menu erstellen, wo man auswählen kann welches Programm gestartet wird. | 240 min. |
-| 5.F  |10.11.22| Niclas     | Mit try und catch, Fehlereingaben abfangen | 60 min. |
-| 6.G  |10.11.22| Niclas      | Es wird gespeichert, nach welchem Tier gesucht wurde | 240 min. |
-| 2.H  |.11.22| alle      | | 60 min. |
-| 2.I  |.11.22| alle      | | 60 min. |
-| 2.J  |.11.22| alle      | | 60 min. |
+| 2.A  |27.10.22| Niclas     | Eingabe von einem Tier. | 60 min. |
+| 3.A  |27.10.22| Niclas     | Ausgabe vom Nahrungsnetz des gesuchten Tieres.   | 120 min. |
+| 4.A  |03.11.22| Niclas     | Frage ob ein nicht gefundenes Tier eingetragen werden soll.   | 240 min. |
+| 4.A  |03.11.22| Elias      | Menu erstellen, wo man auswählen kann welches Programm gestartet wird. | 240 min. |
+| 5.A  |10.11.22| Niclas     | Mit try und catch, Fehlereingaben abfangen | 60 min. |
+| 6.A  |10.11.22| Niclas     | Es wird gespeichert, nach welchem Tier gesucht wurde | 240 min. |
+| 7.A  |17.11.22| Niclas     | Man soll mit alle gesuchten Tieren in eine Liste haben.  | 90 min. |
+| 8.A  |17.11.22| Niclas     | Man soll die Liste nach Kriterien ordnen können.  | 120 min. |
+| 9.A  |24.11.22| Niclas     | Es soll einen Verlauf geben für schon gesuchten Tieren. | 120 min. |
+| 10.A |24.11.22| Niclas     | Falsche Informationen sollen gemeldet können werden. | 90 min. |
+
 
 ### 2.1 Planen vom Quiz
 
