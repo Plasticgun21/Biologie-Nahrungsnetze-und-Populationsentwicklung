@@ -35,6 +35,8 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | 8    |      kann       | Funktion | Ich möchte, dass man die Sortierung anpassen kann nach verschiedenen Kriterien, dass der Nutzer Tiere besser findet.|
 | 9    |      kann       | Funktion | Ich möchte anzeigen lassen welche Tiere die letzten Male gesucht worden, damit man Sachen wiederfindet.|
 | 10   |      kann       | Funktion | Ich möchte, dass man Informationen, welche falsch erscheinen melden kann, damit man Falschinfos vermeiden kann.|
+| 11   |      muss       | Funktion | Ich möchte, dass der Spieler über ein Menu die verschiedenen Programme starten kann, damit es für ihn einfacher ist.|
+
 
 
 ### 1.2.2 User Stories für 2. Projekt
@@ -105,23 +107,23 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 
 
 
-## 2 Planen
+# 2 Planen
 
-# 2.1 Planen vom Nahrungsnetz
+### 2.1 Planen vom Nahrungsnetz
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
 | 1.A  |20.10.22| Niclas     | Die Datenbank einlesen.  | 240 min. |
-| 2.A  |27.10.22| Niclas     | Eingabe von einem Tier. | 60 min. |
-| 3.A  |27.10.22| Niclas     | Ausgabe vom Nahrungsnetz des gesuchten Tieres.   | 120 min. |
-| 4.A  |03.11.22| Niclas     | Frage ob ein nicht gefundenes Tier eingetragen werden soll.   | 240 min. |
-| 4.A  |03.11.22| Elias      | Menu erstellen, wo man auswählen kann welches Programm gestartet wird. | 240 min. |
-| 5.A  |10.11.22| Niclas     | Mit try und catch, Fehlereingaben abfangen | 60 min. |
-| 6.A  |10.11.22| Niclas     | Es wird gespeichert, nach welchem Tier gesucht wurde | 240 min. |
-| 7.A  |17.11.22| Niclas     | Man soll mit alle gesuchten Tieren in eine Liste haben.  | 90 min. |
-| 8.A  |17.11.22| Niclas     | Man soll die Liste nach Kriterien ordnen können.  | 120 min. |
-| 9.A  |24.11.22| Niclas     | Es soll einen Verlauf geben für schon gesuchten Tieren. | 120 min. |
-| 10.A |24.11.22| Niclas     | Falsche Informationen sollen gemeldet können werden. | 90 min. |
+| 2.B  |27.10.22| Niclas     | Eingabe von einem Tier. | 60 min. |
+| 3.C  |27.10.22| Niclas     | Ausgabe vom Nahrungsnetz des gesuchten Tieres.   | 120 min. |
+| 4.D  |03.11.22| Niclas     | Frage ob ein nicht gefundenes Tier eingetragen werden soll.   | 240 min. |
+| 11.K |03.11.22| Elias      | Menu erstellen, wo man auswählen kann welches Programm gestartet wird. | 240 min. |
+| 5.E  |10.11.22| Niclas     | Mit try und catch, Fehlereingaben abfangen | 60 min. |
+| 6.F  |10.11.22| Niclas     | Es wird gespeichert, nach welchem Tier gesucht wurde | 120 min. |
+| 7.G  |17.11.22| Niclas     | Man soll alle Tiere in einer Liste ausgeben  | 90 min. |
+| 8.H  |17.11.22| Niclas     | Man soll die Liste nach Kriterien ordnen können.  | 120 min. |
+| 9.I  |24.11.22| Niclas     | Es soll einen Verlauf geben für schon gesuchten Tieren. | 120 min. |
+| 10.J |24.11.22| Niclas     | Falsche Informationen sollen gemeldet können werden. | 90 min. |
 
 
 ### 2.2 Planen vom Quiz
@@ -129,14 +131,14 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
 | 1.A  |10.11.22| Luca     | Basis Struktur programieren  | 240 min. |
-| 2.A  |17.11.22| Luca     | Anschluss zur Datentenbank | 60 min. |
-| 2.B  |17.11.22| Luca     | RNG Fragen programmieren | 120 min. |
-| 3.A  |24.11.22| Luca     | Richtig und Falsch als Antworten programmieren.  | 60 min. |
-| 4.A  |24.11.22| Luca     | Lösungsvergleich programmieren. | 120 min. |
-| 5.A  |01.12.22| Luca     | Spielfortsetzer/Pausemenü programmieren. | 90 min. |
-| 6.A  |01.12.22| Luca     | Schlussgratulation und Neuspiel programmieren. | 60 min. |
-| 7.A  |08.12.22| Luca     | Schwierigkeit programmieren. | 60 min. |
-| 8/9.A  |08.12.22| Luca   | Schwierigkeit der Fragen programmien. | 60 min. |
+| 2.B  |17.11.22| Luca     | Anschluss zur Datentenbank | 60 min. |
+| 3.C  |17.11.22| Luca     | RNG Fragen programmieren | 120 min. |
+| 4.D  |24.11.22| Luca     | Richtig und Falsch als Antworten programmieren.  | 60 min. |
+| 5.E  |24.11.22| Luca     | Lösungsvergleich programmieren. | 120 min. |
+| 6.F  |01.12.22| Luca     | Spielfortsetzer/Pausemenü programmieren. | 90 min. |
+| 7.G  |01.12.22| Luca     | Schlussgratulation und Neuspiel programmieren. | 60 min. |
+| 8.H  |08.12.22| Luca     | Schwierigkeit programmieren. | 60 min. |
+| 9/10.I  |08.12.22| Luca   | Schwierigkeit der Fragen programmiren. | 60 min. |
 
 
 
@@ -144,13 +146,15 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |20.10.22| Niclas     | Die Datenbank einlesen.  | 240 min. |
-| 1.B  |27.10.22| Niclas     | Eingabe von einem Tier. | 60 min. |
-| 2.A  |27.10.22| Niclas     | Ausgabe vom Nahrungsnetz des gesuchten Tieres.   | 120 min. |
-| 3.A  |03.11.22| Niclas     | Frage ob ein nicht gefundenes Tier eingetragen werden soll.   | 240 min. |
-| 4.A  |03.11.22| Elias      | Menu erstellen, wo man auswählen kann welches Programm gestartet wird. | 240 min. |
-| 5.A  |10.11.22| Niclas     | Mit try und catch, Fehlereingaben abfangen | 60 min. |
-| 6.A  |10.11.22| Nicls      | Es wird gespeichert, nach welchem Tier gesucht wurde | 60 min. |
+| 1.A  |10.11.22| Elias     | Eingabe von den Zahlen   | 240 min. |
+| 2.B  |17.11.22| Elias     |  | 60 min. |
+| 3.C  |17.11.22| Elias     |  | 120 min. |
+| 4.D  |24.11.22| Elias     |   | 60 min. |
+| 5.E  |24.11.22|      | | 120 min. |
+| 6.F  |01.12.22|      |  | 90 min. |
+| 7.G  |01.12.22|      |  | 60 min. |
+| 8.H  |08.12.22|      |  | 60 min. |
+| 9/10.I  |08.12.22|    |  | 60 min. |
 
 
 Total: 
@@ -160,6 +164,42 @@ Total:
 Wir haben und dazu entscheiden alle 3 Programme in einem Programm zu schreiben, und mit einem Menu zu arbeiten, mit dem man die verschiedenen Dinge auswählen kann.
 
 ## 4 Realisieren
+
+### Realisieren Nahrungsnetz
+
+| AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
+| ---- | ----- | --------- | ------------- | ----------------- |
+| 1.A  |  20.10.22     |     Niclas      |       240 min.        |                   |
+| 2.B  |  27.10.22     |     Niclas      |       60 min.        |                   |
+| 3.C  |  27.10.22     |     Niclas      |       120 min.        |                   |
+| 4.D  |  03.11.22     |     Niclas      |       240 min.        |                   |
+| 11.K  |  03.11.22     |    Elias       |       240 min.        |       ca. 220 min. mit Toturial schauen            |
+| 5.E  |       |     Niclas      |     60 min.      |                   |
+| 6.F  |       |     Niclas      |     120 min.      |                   |
+| 7.G  |       |     Niclas      |     90 min.          |                   |
+| 8.H  |       |     Niclas      |     120 min.          |                   |
+| 9.I  |       |     Niclas      |     120 min.          |                   |
+| 10.J  |       |    Niclas       |    90 min.           |                   |
+
+### Realisieren Quiz
+
+| AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
+| ---- | ----- | --------- | ------------- | ----------------- |
+| 1.A  |       |     Luca      |      240 min.         |                   |
+| 2.B  |       |     Luca      |               |                   |
+| 3.C  |       |     Luca      |               |                   |
+| 4.D  |       |     Luca      |               |                   |
+| 5.E  |       |     Luca      |               |                   |
+| 6.F  |       |     Luca      |               |                   |
+| 7.G  |       |     Luca      |               |                   |
+| 8.H  |       |     Luca      |               |                   |
+| 9/10.I  |       |     Luca      |               |                   |
+| ...  |       |     Luca      |               |                   |
+| ...  |       |     Luca      |               |                   |
+
+
+
+### Realisieren Populationsdiagramm
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
