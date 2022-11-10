@@ -254,13 +254,32 @@ namespace NahrungsnetzAuftrag
 
             if (selectedIndex == 0)
             {
-                Console.WriteLine("Hier gibts nichts zu sehen :)");
                 Random rnd = new Random();
-                int num = rnd.Next();
+
+                int Frage = rnd.Next(0, 5);
+                int Nahrungsnetz = rnd.Next(Zeilen.Length);
+                switch (Frage)
                 {
-                    Console.WriteLine(rnd.Next(5));
+                    case 0:
+                        Console.WriteLine($"Was isst ein*e {Tier[Nahrungsnetz]} ?");
+                        //überprüf code
+                        break;
+                    case 1:
+                        Console.WriteLine($"Ist ein*e {Tier[Nahrungsnetz]} der Unterordnung von {Unterordnung[Nahrungsnetz]}?");
+                        break;
+                    case 2:
+                        Console.WriteLine($"Wird ein*e {Tier[Nahrungsnetz]} ungefähr {Erwartetes_Alter[Nahrungsnetz]} alt?");
+                        break;
+                    case 3:
+                        Console.WriteLine($"Ist die ungefähre Population von {Tier[Nahrungsnetz]} {Population[Nahrungsnetz]}?"); 
+                        break;
+                    case 4:
+                        Console.WriteLine($"Isst ein*e {Tier[Nahrungsnetz]} {Nahrung[Nahrungsnetz]}?");
+                        break;
+                    case 5:
+                        Console.WriteLine($"Sind die Natürliche Feinde der {Tier[Nahrungsnetz]} {Natürliche_Feinde[Nahrungsnetz]}?");
+                        break;
                 }
-                int[] numbers = { 0, 1, 2, 3, 4, 5 };
 
             }
         
@@ -295,24 +314,41 @@ namespace NahrungsnetzAuftrag
 
         static void Populationsdiagramm()
         {
+           
 
+            double x = 0; //Anzahl Beute im System
+            x = Convert.ToDouble(Console.ReadLine());
 
+            double y = 0; //Anzahl Jäger im System
+            y = Convert.ToDouble(Console.ReadLine());
 
+            int t = 0; //Zeitspanne von der Simulation
+            t = Convert.ToDouble(Console.ReadLine());
 
-            double x = 5.0; //Anzahl 
-            double Beute = 10.0;
+            double a = 0.09; //Wachstumsrate von der Beute
 
-            double AblaufZeit = 0;
-
-            double WachstumsRateBeute = 0.09;
-            double TodesRateBeute = 0.01;
+            double b = 0.01; //Todesrate von der Beute
             
-            double WachstumsRateJäger = 0.01;
-            double TodesRateJäger = 0.04;
+            double c = 0.01; //Wachstumsrate von den Jägern
 
-            for (int i = 0; i < 1000; ++i)
-      {
-                
+            double d = 0.04; //Todesrate von den Jägern
+
+            Console.WriteLine($"Beute = {x} Jäger = {y}");
+            Console.WriteLine($"Beute Wachstum = {a} Todesrate Beute = {b}");
+            Console.WriteLine($"Jäger Wachstum = {c} Todesrate Jäger = {d}");
+            Console.WriteLine("\ntime" + "\t" + "Beute" + "\t" + "Jäger");
+
+
+            /*Console.WriteLine("Beute = " + x.ToString("F1") + "  Jäger = " + y.ToString("F1"));
+            Console.WriteLine("Beute Wachstum     = " + a.ToString("F3") + " Todesrate Beute     = " + b.ToString("F3"));
+            Console.WriteLine("Jäger Wachstum = " + c.ToString("F3") + " Todesrate Jäger = " + d.ToString("F3"));
+            Console.WriteLine("\ntime" + "\t" + "Beute" + "\t" + "Jäger");*/
+
+            for (int i = 0; i < 20; ++i)
+            {
+                Console.WriteLine(t + "\t" + x.ToString("F1") + "\t" + y.ToString("F1"));
+               
+
                 double dx = (a * x) - (b * x * y);
                 double dy = (c * x * y) - (d * y);
                 int dt = 1;
@@ -322,24 +358,7 @@ namespace NahrungsnetzAuftrag
                 t = t + dt;
             }
 
-            /*int ShuCounter = 0;
-            Console.WriteLine("Geben sie an über welche Zeitspanne das Diagramm laufen soll. ");
-            int AblaufZeit = Console.ReadLine();
-            Console.WriteLine("Geben sie an über welche Intervale das Diagramm überprüft werden soll. ");
-            int Interval = Console.ReadLine();
-            Console.WriteLine("Geben sie an wie viel Beute momentan vorhanden ist");
-            int Beute = Console.ReadLine();
-            Console.WriteLine("Geben sie an wie viele Jäger momentan vorhanden sind");
-            int Jäger = Console.ReadLine();
-
-            while (ShuCounter = 0;)
-            {
-
-                Beute / AblaufZeit == Beute
-
-
-
-            }*/
+            
 
         }
 
