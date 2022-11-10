@@ -41,8 +41,9 @@ namespace NahrungsnetzAuftrag
             }
             else if(selectedIndex == 2)
             {
-                Console.WriteLine("Hier gibts nichts zu sehen :)");
-                System.Environment.Exit(1);
+                Console.Clear();
+                Populationsdiagramm();
+
             }
 
 
@@ -74,7 +75,7 @@ namespace NahrungsnetzAuftrag
                 Nahrung[Count] = Temp[4];
                 Natürliche_Feinde[Count] = Temp[5];
                 Count++;
-
+                
             }
 
             string prompt = "██████╗  █████╗ ████████╗███████╗███╗   ██╗██████╗  █████╗ ███╗   ██╗██╗  ██╗\r\n██╔══██╗██╔══██╗╚══██╔══╝██╔════╝████╗  ██║██╔══██╗██╔══██╗████╗  ██║██║ ██╔╝\r\n██║  ██║███████║   ██║   █████╗  ██╔██╗ ██║██████╔╝███████║██╔██╗ ██║█████╔╝ \r\n██║  ██║██╔══██║   ██║   ██╔══╝  ██║╚██╗██║██╔══██╗██╔══██║██║╚██╗██║██╔═██╗ \r\n██████╔╝██║  ██║   ██║   ███████╗██║ ╚████║██████╔╝██║  ██║██║ ╚████║██║  ██╗\r\n╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝";
@@ -254,17 +255,32 @@ namespace NahrungsnetzAuftrag
             if (selectedIndex == 0)
             {
                 Console.WriteLine("Hier gibts nichts zu sehen :)");
-                System.Environment.Exit(1);
+                Random rnd = new Random();
+                int num = rnd.Next();
+                {
+                    Console.WriteLine(rnd.Next(5));
+                }
+                int[] numbers = { 0, 1, 2, 3, 4, 5 };
+
             }
+        
             else if (selectedIndex == 1)
             {
                 Console.WriteLine("Hier gibts nichts zu sehen :)");
-                System.Environment.Exit(1);
+                Random rnd = new Random();
+                int num = rnd.Next();
+                {
+                    Console.WriteLine(rnd.Next(5));
+                }
             }
             else if (selectedIndex == 2)
             {
                 Console.WriteLine("Hier gibts nichts zu sehen :)");
-                System.Environment.Exit(1);
+                Random rnd = new Random();
+                int num = rnd.Next();
+                {
+                    Console.WriteLine(rnd.Next(5));
+                }
             }
             else if (selectedIndex == 3)
             {
@@ -274,7 +290,60 @@ namespace NahrungsnetzAuftrag
 
             Console.WriteLine("Hier ist die erste Frage");
         }
-        
+
+
+
+        static void Populationsdiagramm()
+        {
+
+
+
+
+            double x = 5.0; //Anzahl 
+            double Beute = 10.0;
+
+            double AblaufZeit = 0;
+
+            double WachstumsRateBeute = 0.09;
+            double TodesRateBeute = 0.01;
+            
+            double WachstumsRateJäger = 0.01;
+            double TodesRateJäger = 0.04;
+
+            for (int i = 0; i < 1000; ++i)
+      {
+                
+                double dx = (a * x) - (b * x * y);
+                double dy = (c * x * y) - (d * y);
+                int dt = 1;
+
+                x = x + dx;
+                y = y + dy;
+                t = t + dt;
+            }
+
+            /*int ShuCounter = 0;
+            Console.WriteLine("Geben sie an über welche Zeitspanne das Diagramm laufen soll. ");
+            int AblaufZeit = Console.ReadLine();
+            Console.WriteLine("Geben sie an über welche Intervale das Diagramm überprüft werden soll. ");
+            int Interval = Console.ReadLine();
+            Console.WriteLine("Geben sie an wie viel Beute momentan vorhanden ist");
+            int Beute = Console.ReadLine();
+            Console.WriteLine("Geben sie an wie viele Jäger momentan vorhanden sind");
+            int Jäger = Console.ReadLine();
+
+            while (ShuCounter = 0;)
+            {
+
+                Beute / AblaufZeit == Beute
+
+
+
+            }*/
+
+        }
+
+
     }
 }
 
