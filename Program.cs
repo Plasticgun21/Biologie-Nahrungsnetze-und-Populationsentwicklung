@@ -326,7 +326,7 @@ namespace NahrungsnetzAuftrag
            
 
             double a = 0.09; //Wachstumsrate von der Beute
-
+            a = Convert.ToDouble(Console.ReadLine());
             double b = 0.01; //Todesrate von der Beute
             
             double c = 0.01; //Wachstumsrate von den Jägern
