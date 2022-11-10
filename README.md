@@ -130,7 +130,7 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |10.11.22| Luca     | Basis Struktur programieren  | 240 min. |
+| 1.A  |10.11.22| Luca     | Quiz Struktur programmieren  | 180 min. |
 | 2.B  |17.11.22| Luca     | Anschluss zur Datentenbank | 60 min. |
 | 3.C  |17.11.22| Luca     | RNG Fragen programmieren | 120 min. |
 | 4.D  |24.11.22| Luca     | Richtig und Falsch als Antworten programmieren.  | 60 min. |
