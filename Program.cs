@@ -323,7 +323,7 @@ namespace NahrungsnetzAuftrag
             y = Convert.ToDouble(Console.ReadLine());
 
             int t = 0; //Zeitspanne von der Simulation
-            t = Convert.ToDouble(Console.ReadLine());
+           
 
             double a = 0.09; //Wachstumsrate von der Beute
 
