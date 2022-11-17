@@ -185,9 +185,9 @@ Wir haben und dazu entscheiden alle 3 Programme in einem Programm zu schreiben, 
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       |     Luca      |      240 min.         |                   |
-| 2.B  |       |     Luca      |               |                   |
-| 3.C  |       |     Luca      |               |                   |
+| 1.A  |3.11.22|     Luca      |      180 min.         |       240 min.      |
+| 2.B  |10.11.22|     Luca      |     60 min.          |       90 min.       |
+| 3.C  |10.11.22 |     Luca      |    120 min.  |     120 min.      |
 | 4.D  |       |     Luca      |               |                   |
 | 5.E  |       |     Luca      |               |                   |
 | 6.F  |       |     Luca      |               |                   |
