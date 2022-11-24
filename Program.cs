@@ -526,7 +526,7 @@ namespace NahrungsnetzAuftrag
             double[] dyVal = new double[Time];
             int Counter = 0;
 
-            for (int i = 0; i > Time; ++i)
+            for (int i = 0; i < Time; ++i)
             {
                 NumsTime[Counter] = t;
                 NumsPreditor[Counter] = Convert.ToInt32(Math.Round(x, 0, MidpointRounding.ToEven));
@@ -588,7 +588,7 @@ namespace NahrungsnetzAuftrag
                new Point(118, 15),
                new Point(33, 94)  */
 
-            DrawChart();
+            DrawChart(chartList);
             Console.Read();
 
         }
