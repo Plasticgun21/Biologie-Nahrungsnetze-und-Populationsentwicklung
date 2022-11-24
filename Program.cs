@@ -253,19 +253,20 @@ namespace NahrungsnetzAuftrag
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
 
+            Random rnd = new Random();
+
+            int Frage = rnd.Next(0, 5);
+            int Nahrungsnetz = rnd.Next(Zeilen.Length);
+            string Antworten = "";
+            int Punktzahl = 0;
+            int Fragezahl = 0;
+            int A;
+            int B;
+            int C;
+            int D;
+
             if (selectedIndex == 0)
             {
-                Random rnd = new Random();
-
-                int Frage = rnd.Next(0, 5);
-                int Nahrungsnetz = rnd.Next(Zeilen.Length);
-                string Antworten = "";
-                int Punktzahl = 0;
-                int Fragezahl = 0;
-
-                if (selectedIndex == 0)
-                {
-                }
 
                 switch (Frage)
                 {
@@ -279,20 +280,20 @@ namespace NahrungsnetzAuftrag
                             Punktzahl++;
                             Fragezahl++;
                         }
-                            else 
-                        {                           
+                        else 
+                        {                       
                             Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
                             Fragezahl++;
                         }
                         break;
                     case 1:
                         Console.WriteLine($"Wird ein*e {Tier[Nahrungsnetz]} ungefähr {Erwartetes_Alter[Nahrungsnetz]} alt?");
-                       if (Antworten ==  Tier[Nahrungsnetz])
+                        if (Antworten ==  Tier[Nahrungsnetz])
                         {
                             Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
                             Punktzahl++;
                             Fragezahl++;
-                            }
+                        }
                         else
                         {                            
                             Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
@@ -320,7 +321,7 @@ namespace NahrungsnetzAuftrag
                             Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
                             Punktzahl++;
                             Fragezahl++;
-                            }
+                        }
                         else 
                         {                          
                             Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
@@ -334,7 +335,7 @@ namespace NahrungsnetzAuftrag
                             Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
                             Punktzahl++;
                             Fragezahl++;
-                            }
+                        }
                         else 
                         {                            
                             Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
@@ -348,7 +349,7 @@ namespace NahrungsnetzAuftrag
                             Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
                             Punktzahl++;
                             Fragezahl++;
-                            }
+                        }
                         else
                         {                            
                             Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
@@ -358,17 +359,6 @@ namespace NahrungsnetzAuftrag
                 }
 
             }
-            Random rnd = new Random();
-
-            int Frage = rnd.Next(0, 5);
-            int Nahrungsnetz = rnd.Next(Zeilen.Length);
-            string Antworten;
-            int Punktzahl = 0;
-            int Fragezahl = 0;
-            int A;
-            int B;
-            int C;
-            int D;
 
             else if (selectedIndex == 1)
             {
@@ -377,23 +367,13 @@ namespace NahrungsnetzAuftrag
 
                     case 0:
                         Console.WriteLine($"Ist ein*e {Tier[Nahrungsnetz]} der Unterordnung von {Unterordnung[Nahrungsnetz]}?");
-                        Console
-                        Antworten = Convert.ToString(Console.ReadLine());                       
+                        Antworten = Console.ReadLine();                       
                         A = 0;
                         B = 1;
                         C = 2;
                         D = 3;
-                        Random rnd = new Random(0, 3);
+                        Frage = rnd.Next(0, 3);
 
-
-                        if  
-                        {
-                           
-                        }
-                        else 
-                        {
-                           
-                        }
                         break;
                     case 1:
                         Console.WriteLine($"Wird ein*e {Tier[Nahrungsnetz]} ungefähr {Erwartetes_Alter[Nahrungsnetz]} alt?");
@@ -470,7 +450,6 @@ namespace NahrungsnetzAuftrag
             else if (selectedIndex == 2)
             {
                 Console.WriteLine("Hier gibts nichts zu sehen :)");
-                Random rnd = new Random();
                 int num = rnd.Next();
                 {
                     Console.WriteLine(rnd.Next(5));
@@ -486,7 +465,7 @@ namespace NahrungsnetzAuftrag
         }
 
 
-
+        
         static void Populationsdiagramm()
         {
             double x = 0; //Anzahl Beute im System
@@ -539,6 +518,8 @@ namespace NahrungsnetzAuftrag
             double dx = 0;
             double dy = 0;
             int Time = t;
+            var chartList = new List<Point>();
+            int counterDiagramm = 0;
             for (int i = 0; i <= t; ++i)
             {
                 Math.Round(x, 0, MidpointRounding.ToEven);
@@ -554,25 +535,18 @@ namespace NahrungsnetzAuftrag
                 x = x + dx;
                 y = y + dy;
                 t = t + dt;
+
+                new Point(Convert.ToInt32(Math.Round(dx, 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dy, 0, MidpointRounding.ToEven))); // dx = Anzahl von Beute  dy = Anzahl von den Jägern
+
+                counterDiagramm++;
             }
-
-            Start(dx, dy);
-
-        }
-
-        static void Start(double dx, double dy)
-        {
-
-            var chartList = new List<Point>();
-
-            int counterDiagramm = 0;
-
+            /*
             while (counterDiagramm < t)
             {
                 new Point(dx, dy); // dx = Anzahl von Beute  dy = Anzahl von den Jägern
 
                 counterDiagramm++;
-            }
+            } */
 
             /* new Point(71, 87),
                new Point(72, 87),
@@ -584,10 +558,8 @@ namespace NahrungsnetzAuftrag
 
             DrawChart(chartList);
             Console.Read();
+
         }
-
-         
-
 
         public struct Point
         {
