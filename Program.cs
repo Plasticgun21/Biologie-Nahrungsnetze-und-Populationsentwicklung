@@ -468,13 +468,13 @@ namespace NahrungsnetzAuftrag
         
         static void Populationsdiagramm()
         {
-            double x = 0; //Anzahl Beute im System
-            double y = 0; //Anzahl Jäger im System
-            double a = 0; //Wachstumsrate von der Beute
-            double b = 0; //Todesrate von der Beute
-            double c = 0; //Wachstumsrate von den Jägern
-            double d = 0; //Todesrate von den Jägern
-            int t = 0; //Zeitspanne von der Simulation
+            double x = 100; //Anzahl Beute im System
+            double y = 10; //Anzahl Jäger im System
+            double a = 0.15; //Wachstumsrate von der Beute
+            double b = 0.01; //Todesrate von der Beute
+            double c = 0.01; //Wachstumsrate von den Jägern
+            double d = 0.02; //Todesrate von den Jägern
+            int t = 100; //Zeitspanne von der Simulation
 
             try
             {
@@ -515,31 +515,63 @@ namespace NahrungsnetzAuftrag
             Console.WriteLine("Beute Wachstum     = " + a.ToString("F3") + " Todesrate Beute     = " + b.ToString("F3"));
             Console.WriteLine("Jäger Wachstum = " + c.ToString("F3") + " Todesrate Jäger = " + d.ToString("F3"));
             Console.WriteLine("\ntime" + "\t" + "Beute" + "\t" + "Jäger");*/
-            double dx = 0;
-            double dy = 0;
+
+            
+
             int Time = t;
-            var chartList = new List<Point>();
-            int counterDiagramm = 0;
-            for (int i = 0; i <= t; ++i)
+            int[] NumsTime = new int[Time];
+            int[] NumsPreditor = new int[Time];
+            int[] NumsHunter = new int[Time];
+            double[] dxVal = new double[Time];
+            double[] dyVal = new double[Time];
+            int Counter = 0;
+
+            for (int i = 0; i > Time; ++i)
             {
-                Math.Round(x, 0, MidpointRounding.ToEven);
-                Math.Round(y, 0, MidpointRounding.ToEven);
+                NumsTime[Counter] = t;
+                NumsPreditor[Counter] = Convert.ToInt32(Math.Round(x, 0, MidpointRounding.ToEven));
+                NumsHunter[Counter] = Convert.ToInt32(Math.Round(y, 0, MidpointRounding.ToEven));
 
-                Console.WriteLine($"{t} \t {x} \t {y}");
+                Console.WriteLine($"{t} \t {Math.Round(x, 0, MidpointRounding.ToEven)} \t {Math.Round(y, 0, MidpointRounding.ToEven)}");
 
-
-                dx = (a * x) - (b * x * y);
-                dy = (c * x * y) - (d * y);
+                double dx = (a * x) - (b * x * y);
+                double dy = (c * x * y) - (d * y);
                 int dt = 1;
 
                 x = x + dx;
                 y = y + dy;
                 t = t + dt;
 
-                new Point(Convert.ToInt32(Math.Round(dx, 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dy, 0, MidpointRounding.ToEven))); // dx = Anzahl von Beute  dy = Anzahl von den Jägern
+                dxVal[Counter] = dx;
+                dyVal[Counter] = dy;
 
-                counterDiagramm++;
+
+                Counter++;
             }
+            Counter = 0;
+
+            var chartList = new List<Point>
+            {
+                new Point(Convert.ToInt32(Math.Round(dxVal[0], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[0], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(dxVal[1], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[1], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(dxVal[2], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[2], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(dxVal[3], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[3], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(dxVal[4], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[4], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(dxVal[5], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[5], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(dxVal[6], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[6], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(dxVal[7], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[7], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(dxVal[8], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[8], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(dxVal[9], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[9], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(dxVal[10], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[10], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(dxVal[11], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[11], 0, MidpointRounding.ToEven))),
+
+            };
+
+            
+           
+
+
+
             /*
             while (counterDiagramm < t)
             {
@@ -556,7 +588,7 @@ namespace NahrungsnetzAuftrag
                new Point(118, 15),
                new Point(33, 94)  */
 
-            DrawChart(chartList);
+            DrawChart();
             Console.Read();
 
         }
