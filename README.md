@@ -5,11 +5,11 @@
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|       | 0.0.1   | Wir haben unseres Thema ausgewählt und ich Luca hat Herr Siegrist für Anforderungen gefragt.|
-|       | 0.1.1   | Die Datenbank kann nun eingelesen werden und es wird alles mehr oder weniger ausgegeben.|
-|       | 0.1.2   | Man kann nun über das neu erstellte Menu auf die 3 verschiedenen Programme zugreifen, man kann jetzt auch nicht vorhandene Tiere hinzufügen.|
-|       | 0.1.    |                                                              |
-|       | 0.1.    |                                                              |
+|   20.11.22    | 0.0.1   | Wir haben unseres Thema ausgewählt und ich Luca hat Herr Siegrist für Anforderungen gefragt.|
+|   27.11.22    | 0.1.1   | Die Datenbank kann nun eingelesen werden und es wird alles mehr oder weniger ausgegeben.|
+|   03.11.22    | 0.1.2   | Man kann nun über das neu erstellte Menu auf die 3 verschiedenen Programme zugreifen, man kann jetzt auch nicht vorhandene Tiere hinzufügen.|
+|   10.11.22    | 0.1.3    | Wir haben mit dem Populationsdiagramm und dem Quiz begonnen.                                                             |
+|   17.11.22    | 0.1.4    |                                                              |
 |       | 1.0.0   |                                                              |
 
 ## 1 Informieren
@@ -59,7 +59,7 @@ Wir müssen drei Programme programieren eine Datenbank mit Informationen mit Nah
 
 | US-№ | Verbindlichkeit | Typ  |Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |      muss       | Funktion | Ich möchte, dass der Nutzer Zahlen zu für den Momentanen Bestand der Beute eingeben kann um, damit zu rechnen|
+| 1    |      muss       | Funktion | Ich möchte, dass der Nutzer Zahlen zu für den Momentanen Bestand der Beute, Jäger und andere Daten eingeben kann um, damit zu rechnen|
 | 2    |      muss       | Funktion | Ich möchte als Nutzer, dass die Beute und die Räuber andere Farben haben , damit ich sie unterscheiden kann. |
 | 3    |      muss       | Funktion | Ich möchte, als Nutzer, dass die x/y Zahlen beim Diagramm angezeigt werden, damit ich das ich es Visuel sehen kann.|
 | 4    |      muss       | Funktion | Ich möchte, als Nutzer, mehrere Jahren haben, damit ich es länger sehen kann.|
@@ -185,9 +185,9 @@ Wir haben und dazu entscheiden alle 3 Programme in einem Programm zu schreiben, 
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |3.11.22|     Luca      |      180 min.         |       240 min.      |
-| 2.B  |10.11.22|     Luca      |     60 min.          |       90 min.       |
-| 3.C  |10.11.22 |     Luca      |    120 min.  |     120 min.      |
+| 1.A  |       |     Luca      |      240 min.         |                   |
+| 2.B  |       |     Luca      |               |                   |
+| 3.C  |       |     Luca      |               |                   |
 | 4.D  |       |     Luca      |               |                   |
 | 5.E  |       |     Luca      |               |                   |
 | 6.F  |       |     Luca      |               |                   |
@@ -203,9 +203,13 @@ Wir haben und dazu entscheiden alle 3 Programme in einem Programm zu schreiben, 
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       |           |               |                   |
-| ...  |       |           |               |                   |
-
+| 1.A  |       |     Elias      |               |                   |
+| ...  |       |     Elias      |               |                   |
+| 1.A  |       |     Elias      |               |                   |
+| 1.A  |       |     Elias      |               |                   |
+| 1.A  |       |     Elias      |               |                   |
+| 1.A  |       |     Elias      |               |                   |
+| 1.A  |       |     Elias      |               |                   |
 ✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
 
 ## 5 Kontrollieren
