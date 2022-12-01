@@ -219,6 +219,7 @@ namespace NahrungsnetzAuftrag
             Console.WriteLine("------------- Ende ---------------");
 
         }
+
         static void Quitz()
         {
             
@@ -255,9 +256,7 @@ namespace NahrungsnetzAuftrag
 
             Random rnd = new Random();
 
-            int Frage = rnd.Next(0, 5);
-            int Nahrungsnetz = rnd.Next(Zeilen.Length);
-            string Antworten = "";
+            string Antworten = null;
             int Punktzahl = 0;
             int Fragezahl = 0;
             int A;
@@ -265,115 +264,124 @@ namespace NahrungsnetzAuftrag
             int C;
             int D;
 
-            if (selectedIndex == 0)
-            {
+            
 
+            if (selectedIndex == 1)
+            {
+                Console.Clear();
+                int Frage = 0; //rnd.Next(0, 5);
+                int Nahrungsnetz = rnd.Next(Zeilen.Length);
+                switch (Frage)
+                {
+                    case 0:
+                        string frage = $"Ist ein*e {Tier[Nahrungsnetz]} der Unterordnung von ..........?";
+                        string[] multiSelect = { "Einfach", "Mittel", "Schwer", "Zurück" };
+                        QuitzSelect multiStart = new QuitzSelect(prompt, options);
+                        int selectedAwnser = multiStart.Run();
+
+                        Frage = rnd.Next(0, 3);
+                        Antworten = Console.ReadLine();
+                       
+                        if(selectedAwnser == 0)
+                        {
+                            Console.Write("Gaggao ist richtig");
+                        }
+
+
+                        break;
+                    case 1:
+                        Console.WriteLine($"Wird ein*e {Tier[Nahrungsnetz]} ungefähr {Erwartetes_Alter[Nahrungsnetz]} alt?");
+                        if (Antworten == Tier[Nahrungsnetz])
+                        {
+                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                            Punktzahl++;
+                            Fragezahl++;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                            Fragezahl++;
+                        }
+                        break;
+                    case 2:
+                        Console.WriteLine($"Ist die ungefähre Population von {Tier[Nahrungsnetz]} {Population[Nahrungsnetz]}?");
+                        if (Antworten == Tier[Nahrungsnetz])
+                        {
+                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                            Punktzahl++;
+                            Fragezahl++;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                            Fragezahl++;
+                        }
+                        break;
+                    case 3:
+                        Console.WriteLine($"Isst ein*e {Tier[Nahrungsnetz]} {Nahrung[Nahrungsnetz]}?");
+                        if (Antworten == Tier[Nahrungsnetz])
+                        {
+                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                            Punktzahl++;
+                            Fragezahl++;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                            Fragezahl++;
+                        }
+                        break;
+                    case 4:
+                        Console.WriteLine($"Sind die Natürliche Feinde der {Tier[Nahrungsnetz]} {Natürliche_Feinde[Nahrungsnetz]}?");
+                        if (Antworten == Tier[Nahrungsnetz])
+                        {
+                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                            Punktzahl++;
+                            Fragezahl++;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                            Fragezahl++;
+                        }
+                        break;
+                    case 5:
+                        Console.WriteLine($"Was ist ein {Tier[Nahrungsnetz]}?");
+                        if (Antworten == Tier[Nahrungsnetz])
+                        {
+                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                            Punktzahl++;
+                            Fragezahl++;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                            Fragezahl++;
+                        }
+                        break;
+                }
+            }
+            if (selectedIndex == 2)
+            {
+                int Frage = rnd.Next(0, 5);
+                int Nahrungsnetz = rnd.Next(Zeilen.Length);
                 switch (Frage)
                 {
 
                     case 0:
                         Console.WriteLine($"Ist ein*e {Tier[Nahrungsnetz]} der Unterordnung von {Unterordnung[Nahrungsnetz]}?");
                         Antworten = Convert.ToString(Console.ReadLine());
-                        if (Antworten == Tier[Nahrungsnetz])  
-                        {
-                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
-                            Punktzahl++;
-                            Fragezahl++;
-                        }
-                        else 
-                        {                       
-                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
-                            Fragezahl++;
-                        }
-                        break;
-                    case 1:
-                        Console.WriteLine($"Wird ein*e {Tier[Nahrungsnetz]} ungefähr {Erwartetes_Alter[Nahrungsnetz]} alt?");
-                        if (Antworten ==  Tier[Nahrungsnetz])
+                        if (Antworten == Tier[Nahrungsnetz])
                         {
                             Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
                             Punktzahl++;
                             Fragezahl++;
                         }
                         else
-                        {                            
-                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
-                            Fragezahl++;
-                        }
-                        break;
-                    case 2:
-                        Console.WriteLine($"Ist die ungefähre Population von {Tier[Nahrungsnetz]} {Population[Nahrungsnetz]}?");
-                        if (Antworten ==   Tier[Nahrungsnetz])
                         {
-                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
-                            Punktzahl++;
-                            Fragezahl++;
-                            }
-                        else
-                        {                            
                             Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
                             Fragezahl++;
                         }
-                        break;
-                    case 3:
-                        Console.WriteLine($"Isst ein*e {Tier[Nahrungsnetz]} {Nahrung[Nahrungsnetz]}?");
-                        if (Antworten ==  Tier[Nahrungsnetz])
-                        {
-                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
-                            Punktzahl++;
-                            Fragezahl++;
-                        }
-                        else 
-                        {                          
-                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
-                            Fragezahl++;
-                        }
-                        break;
-                    case 4:
-                        Console.WriteLine($"Sind die Natürliche Feinde der {Tier[Nahrungsnetz]} {Natürliche_Feinde[Nahrungsnetz]}?");
-                        if (Antworten ==   Tier[Nahrungsnetz])
-                        {
-                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
-                            Punktzahl++;
-                            Fragezahl++;
-                        }
-                        else 
-                        {                            
-                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
-                            Fragezahl++;
-                        }
-                        break;
-                    case 5:
-                        Console.WriteLine($"Was ist ein {Tier[Nahrungsnetz]}?");
-                        if (Antworten ==   Tier[Nahrungsnetz])
-                        {
-                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
-                            Punktzahl++;
-                            Fragezahl++;
-                        }
-                        else
-                        {                            
-                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
-                            Fragezahl++;
-                        }
-                        break;
-                }
-
-            }
-
-            else if (selectedIndex == 1)
-            {
-                switch (Frage)
-                {
-
-                    case 0:
-                        Console.WriteLine($"Ist ein*e {Tier[Nahrungsnetz]} der Unterordnung von {Unterordnung[Nahrungsnetz]}?");
-                        Antworten = Console.ReadLine();                       
-                        A = 0;
-                        B = 1;
-                        C = 2;
-                        D = 3;
-                        Frage = rnd.Next(0, 3);
-
                         break;
                     case 1:
                         Console.WriteLine($"Wird ein*e {Tier[Nahrungsnetz]} ungefähr {Erwartetes_Alter[Nahrungsnetz]} alt?");
@@ -404,7 +412,7 @@ namespace NahrungsnetzAuftrag
                         }
                         break;
                     case 3:
-                        Console.WriteLine($"Isst ein*e {Tier[Nahrungsnetz]} {Nahrung[Nahrungsnetz]}?");
+                        Console.WriteLine($"Isst ein*e {Tier[Nahrungsnetz]}, {Nahrung[Nahrungsnetz]}?");
                         if (Antworten == Tier[Nahrungsnetz])
                         {
                             Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
@@ -446,15 +454,9 @@ namespace NahrungsnetzAuftrag
                         }
                         break;
                 }
+
             }
-            else if (selectedIndex == 2)
-            {
-                Console.WriteLine("Hier gibts nichts zu sehen :)");
-                int num = rnd.Next();
-                {
-                    Console.WriteLine(rnd.Next(5));
-                }
-            }
+
             else if (selectedIndex == 3)
             {
                 Console.Clear();
@@ -473,9 +475,9 @@ namespace NahrungsnetzAuftrag
             double a = 0.15; //Wachstumsrate von der Beute
             double b = 0.01; //Todesrate von der Beute
             double c = 0.01; //Wachstumsrate von den Jägern
-            double d = 0.02; //Todesrate von den Jägern
+            double d = 0.05; //Todesrate von den Jägern
             int t = 100; //Zeitspanne von der Simulation
-
+            /*
             try
             {
                 Console.WriteLine("Bitte Geben sie an wie viel Beute vorhanden ist. ");
@@ -504,6 +506,7 @@ namespace NahrungsnetzAuftrag
             {
                 Console.WriteLine("Fehler, geben sie eine gültige Zahl ein.");
             }
+            */
 
             Console.WriteLine($"Beute = {x} Jäger = {y}");
             Console.WriteLine($"Beute Wachstum = {a} Todesrate Beute = {b}");
@@ -522,8 +525,8 @@ namespace NahrungsnetzAuftrag
             int[] NumsTime = new int[Time];
             int[] NumsPreditor = new int[Time];
             int[] NumsHunter = new int[Time];
-            double[] dxVal = new double[Time];
-            double[] dyVal = new double[Time];
+            double[] xVal = new double[Time];
+            double[] yVal = new double[Time];
             int Counter = 0;
 
             for (int i = 0; i < Time; ++i)
@@ -542,8 +545,8 @@ namespace NahrungsnetzAuftrag
                 y = y + dy;
                 t = t + dt;
 
-                dxVal[Counter] = dx;
-                dyVal[Counter] = dy;
+                xVal[Counter] = x;
+                yVal[Counter] = y;
 
 
                 Counter++;
@@ -552,18 +555,18 @@ namespace NahrungsnetzAuftrag
 
             var chartList = new List<Point>
             {
-                new Point(Convert.ToInt32(Math.Round(dxVal[0], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[0], 0, MidpointRounding.ToEven))),
-                new Point(Convert.ToInt32(Math.Round(dxVal[1], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[1], 0, MidpointRounding.ToEven))),
-                new Point(Convert.ToInt32(Math.Round(dxVal[2], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[2], 0, MidpointRounding.ToEven))),
-                new Point(Convert.ToInt32(Math.Round(dxVal[3], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[3], 0, MidpointRounding.ToEven))),
-                new Point(Convert.ToInt32(Math.Round(dxVal[4], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[4], 0, MidpointRounding.ToEven))),
-                new Point(Convert.ToInt32(Math.Round(dxVal[5], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[5], 0, MidpointRounding.ToEven))),
-                new Point(Convert.ToInt32(Math.Round(dxVal[6], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[6], 0, MidpointRounding.ToEven))),
-                new Point(Convert.ToInt32(Math.Round(dxVal[7], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[7], 0, MidpointRounding.ToEven))),
-                new Point(Convert.ToInt32(Math.Round(dxVal[8], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[8], 0, MidpointRounding.ToEven))),
-                new Point(Convert.ToInt32(Math.Round(dxVal[9], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[9], 0, MidpointRounding.ToEven))),
-                new Point(Convert.ToInt32(Math.Round(dxVal[10], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[10], 0, MidpointRounding.ToEven))),
-                new Point(Convert.ToInt32(Math.Round(dxVal[11], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(dyVal[11], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(xVal[0], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[0], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(xVal[1], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[1], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(xVal[2], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[2], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(xVal[3], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[3], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(xVal[4], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[4], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(xVal[5], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[5], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(xVal[6], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[6], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(xVal[7], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[7], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(xVal[8], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[8], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(xVal[9], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[9], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(xVal[10], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[10], 0, MidpointRounding.ToEven))),
+                new Point(Convert.ToInt32(Math.Round(xVal[11], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[11], 0, MidpointRounding.ToEven))),
 
             };
 
@@ -589,7 +592,6 @@ namespace NahrungsnetzAuftrag
                new Point(33, 94)  */
 
             DrawChart(chartList);
-            Console.Read();
 
         }
 
