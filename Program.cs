@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -259,38 +260,55 @@ namespace NahrungsnetzAuftrag
             string Antworten = null;
             int Punktzahl = 0;
             int Fragezahl = 0;
-            int A;
-            int B;
-            int C;
-            int D;
             Console.WriteLine("Hier ist die erste Frage");
 
 
             if (selectedIndex == 1)
             {
                 Console.Clear();
-                int Frage = 0; //rnd.Next(0, 5);
-                int Nahrungsnetz = rnd.Next(Zeilen.Length);
+                int Frage = 0;
+                int optionRight = 0;
+                string[] Letters = { "A", "B", "C", "D" };
+                int Nahrungsnetz = 0;
+                int FraZuf = 0;
                 switch (Frage)
                 {
                     case 0:
-                        string frage = "Ist ein*e {Tier[Nahrungsnetz]} der Unterordnung von ..........?";
-                        string[] multiSelect = { "A", "B", "C", "D" };
-                        QuitzSelect multiStart = new QuitzSelect("Ist ein*e {Tier[Nahrungsnetz]} der Unterordnung von ..........?", multiSelect);
-                        int selectedAwnser = multiStart.Run();
+                        Nahrungsnetz = rnd.Next(Zeilen.Length);
+                        optionRight = rnd.Next(0, 3);
+                        prompt = $"Was ist die Unterordnung von ein*er {Tier[Nahrungsnetz]}?";
 
-                        //Frage = rnd.Next(0, 3);
-                        //Antworten = Console.ReadLine();
+                        FraZuf = rnd.Next(0, 3);
+                        options[0] = $"(A) {Unterordnung[FraZuf]}";
+                        FraZuf = rnd.Next(0, 3);
+                        options[1] = $"(B) {Unterordnung[FraZuf]}";
+                        FraZuf = rnd.Next(0, 3);
+                        options[2] = $"(C) {Unterordnung[FraZuf]}";
+                        FraZuf = rnd.Next(0, 3);
+                        options[3] = $"(D) {Unterordnung[FraZuf]}";
+
+                        options[optionRight] = $"({Letters[optionRight]}) {Unterordnung[Nahrungsnetz]}";
+                        mainMenu = new Menu(prompt, options);
+                        selectedIndex = mainMenu.Run();
                        
-                        if(selectedAwnser == 0)
+                        if(selectedIndex == optionRight)
                         {
-                            Console.Write("Gaggao ist richtig");
+                            Console.WriteLine("Supa");
+                            Punktzahl++;
+                            Fragezahl++;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Niss gut");
+                            Fragezahl++;
                         }
 
-
                         break;
+
                     case 1:
-                        Console.WriteLine($"Wird ein*e {Tier[Nahrungsnetz]} ungefähr {Erwartetes_Alter[Nahrungsnetz]} alt?");
+                        Nahrungsnetz = rnd.Next(Zeilen.Length);
+                        optionRight = rnd.Next(0, 3);
+                        prompt = $"wird ein*e {Tier[Nahrungsnetz]} ungefähr {Erwartetes_Alter[Nahrungsnetz]} alt?";
                         if (Antworten == Tier[Nahrungsnetz])
                         {
                             Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
@@ -358,7 +376,10 @@ namespace NahrungsnetzAuftrag
                             Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
                             Fragezahl++;
                         }
+
+                        Console.WriteLine($"Sie haben {Punktzahl} von {Fragezahl} richtig beantwortet");
                         break;
+
                 }
             }
             if (selectedIndex == 2)
@@ -460,7 +481,6 @@ namespace NahrungsnetzAuftrag
             else if (selectedIndex == 3)
             {
                 Console.Clear();
-                Auslesen();
             }
 
             

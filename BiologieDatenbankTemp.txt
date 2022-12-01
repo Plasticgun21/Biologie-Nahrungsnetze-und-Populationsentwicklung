@@ -1,25 +1,15 @@
 Unterordnung; Tier; erwartetes Alter;Population;Nahrung;nat�rliche Feinde
-Katzen;Katze;;;;
-;Hund;;;;
-;Huhn;;;;
-;;;;;
-;;;;;
-;;;;;
-;Ziege;;; Laub, Gr�ser und Kr�uter;W�lfe, Luchse und andere Raubtiere 
-;;;;;
+Katzen;Katze;fd;as;h;
+1;Hund;sdf;d;f;
+1;Huhn;a;fg;e;
+1;Ziege;;; Laub, Gr�ser und Kr�uter;W�lfe, Luchse und andere Raubtiere 
 Amphibien;Frosch;;;Insekten, Schnecken, W�rmer und andere Amphibien;St�rche, Schlangen
-;Feuersalamander;;;;
-;;;;;
+1;Feuersalamander;;;;
 Schlangen;Python;;;;
-;K�nigskobra;;;Nagetiere ;
-;Boa (Abgottschlange);;;;kaum nat�rliche Feinde, selten gro�e Krokodile, Raubv�gel oder Raubkatzen.
+1;K�nigskobra;;;Nagetiere ;
+1;Boa (Abgottschlange);;;;kaum nat�rliche Feinde, selten gro�e Krokodile, Raubv�gel oder Raubkatzen.
 ;;;;;Alles was sie bew�ltigen kann z.B Nagetiere, Kaimane, 
 ;Ringelnatter;;;Fr�sche, Kr�ten, Molche, Kaulquappen, Eidechsen, Fische und M�use;
-;;;;;
-;;;;;
-;;;;;
-;;;;;
-;;;;;
 V�gel;Flamingo;20 bis 30  Jahre ;;Muscheln, Fische, Nereiden, diverse W�rmer und Krebse;
 ;Adler;;;Fische, V�gel, kleinere S�ugetiere wie Ratten oder Kaninchen und manchmal Aas.;keine nat�rlichen Feinde
 ;Eule;;;M�use, verspeisen aber auch K�fer, Schmetterlinge, Echsen, Fr�sche, kleine V�gel, Hasen und sogar Fische;grosse Eulen haben keine Fressfeinde, kleine Eulen: Marder 
@@ -37,8 +27,6 @@ V�gel;Flamingo;20 bis 30  Jahre ;;Muscheln, Fische, Nereiden, diverse W�rmer
 ;Emus;;;K�rner, Gr�ser, Kr�uter und Bl�ten. manchmal Insekten wie Raupen und Heuschrecken. Zur Verdaung Steine und Sand.;L�wen, Leoparden und Geparde. 
 ;Geier;;;aas;
 ;;;;;keine nat�rlichen Feinde
-;;;;;
-;;;;;
 Raubtiere;;;;;
 ;Leopard;;;K�fer, Reptilien, V�gel, Grossseuger; gr�ssere R�uber wie B�ren, Hy�nen, Schakale und W�lfe
 ;Puma;;;;Grosse Raubkatzen 
@@ -46,11 +34,9 @@ Raubtiere;;;;;
 ;Gepard;;;Huftiere wie Gazellen, Gnuk�lber, Impa- las etc.;
 ;Tiger;;;Hirsche, Wildrinder, Tapire, Antilopen, Wildschweine  etc.;Keine nat�rlichen Feinde
 ;L�we;;;Gnus, Zebras, Wasserb�cke, Gro�e Kudus, Nash�rner, Elefanten etc.;
-;;;;;
 Raubtiere im Meer ;Weisser Hai;;;Robben, kleine Wale, Thunfische oder Tintenfische.;
 ;Hammer hai;;;;
 ;Schwertwal;;;;Haie, M�wen, Wale
-;;;;;
 Fische;Hecht;;;;
 ;Wal;;;Plankton, Krill;Orcas 
 ;Kugelfisch;;;;Keine nat�rlichen Feinde. Selten Haie und Kraken
@@ -59,45 +45,28 @@ Fische;Hecht;;;;
 ;Pinguin;;;Fische, kleine Krebse und Tintenfische;Robben, Orcas und Haie
 ;Rochen;;;Muscheln, Krebse, Seesterne und Seeigel, manchmal kleine Fische und Plankton.;Haie, Delfine
 ;Goldfisch;;;Insekten und deren Larven, W�rmer, kleine Krebstiere, Wasserpflanzen und Algen;
-;;;;;
-;;;;;
 Reptilien;Meeresschildkr�te;;;Kopff��ern, Krebsen, Schw�mmen und Quallen, sp�ter oft nur noch Pflanzlich;
 ;Cham�leon;;;Insekten wie Heuschrecken, Grillen und Mehlw�rmer;
 ;Krokodil;;;;
 ;Leguan;;;Jungtiere: Insekten und wirbellose Tieren. Ausgewachsene Tiere: ;
-;;;;;
-;;;;;
-;;;;;
 Nagetiere;Hamster;;;Salat, K�rner, Karotten etc.;
 ;Maus;;;;
 ;Biber;;;junge Zweige und Knospen, sowie im Winter die Rinde von B�umen;Jungtiere: Raubv�gel, Raubfische und 
 ;Capybara;;;Gr�ser und Melonen, Zuckerrohr oder Mais aus Plantagen;
 ;Eichh�rnchen;;;N�sse;
 ;Chinchilla;;;Gr�ser, Kr�uter und Bl�tter von Str�uchern und Sukkulenten;
-;;;;;
-;;;;;
 Insekten;Fliege;;;organischen Substanzen, Kleine Insekten;
 ;Biene;;;Nektar;
 ;Ameisen;;;Insekten, Pflanzens�ften und dem Honigtau von Schildl�usen oder Blattl�usen;
 ;Libelle;;;Insekten aller Art z.B M�cken, Fliegen, kleine Schmetterlinge oder andere Schmeterlinge;
 ;M�cke;;;;
 ;Schmetterling;;;Pflanzens�ften, Honigtau von L�usen oder dem Saft von faulendem Obst.;
-;;;;;
-;;;;;
-;;;;;
-;;;;;
-;;;;;
-;;;;;
 Spinnen;;;;;
-;;;;;
 ;Tarantel;;;Gliederf��er in passender Gr��e;
 ;Kellerspinne;;;;
-;;;;;
-;;;;;
-;;;;;
 ;Igel;;;Laufk�fer, Insektenlareven, Regenw�rmer, Ohrw�rmer, Schnecken, Hundert- und Tausendf��er und Spinnen;
 SidaNoob;Sida;20 - 300;Sidasaurus-Rex;Hapa Hapa;Antibiotika
-;Sven;18 - 100;Susy baka;ÄLIASCHEK;Mainquäft
+gogg;Sven;18 - 100;Susy baka;ÄLIASCHEK;Mainquäft
 1;2;3;4;5;6
 1;3;4;5;6;7
 1;1;1;1;1;1
