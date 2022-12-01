@@ -9,7 +9,7 @@ namespace NahrungsnetzAuftrag
         ConsoleColor background = Console.BackgroundColor;
         ConsoleColor foreground = Console.ForegroundColor;
 
-        private int SelectedIndex;
+        private int selectedAwnser;
         private string[] Options;
         private string Prompt;
 
@@ -18,18 +18,19 @@ namespace NahrungsnetzAuftrag
 
             Prompt = frage;
             Options = multiSelect;
-            SelectedIndex = 0;
+            selectedAwnser = 0;
         }
 
         public void DisplayOptions()
         {
             Console.WriteLine(Prompt);
+            Console.WriteLine("wieso?");
             for (int i = 0; i < Options.Length; i++)
             {
 
                 string currentOption = Options[i];
                 string prefix;
-                if (i == SelectedIndex)
+                if (i == selectedAwnser)
                 {
                     prefix = "*";
                     Console.ForegroundColor = ConsoleColor.Black;
@@ -66,22 +67,22 @@ namespace NahrungsnetzAuftrag
                 //Update selectedIndex based on arrow keys.
                 if(keyPressed == ConsoleKey.UpArrow)
                 {
-                    SelectedIndex--;
-                    if (SelectedIndex == -1)
+                    selectedAwnser--;
+                    if (selectedAwnser == -1)
                     {
-                        SelectedIndex = Options.Length - 1;
+                        selectedAwnser = Options.Length - 1;
                         
                     }
                     
                         
                 }
                 else if (keyPressed == ConsoleKey.DownArrow)
-                {        
-                    SelectedIndex++;
-                    if (SelectedIndex == Options.Length)
+                {
+                    selectedAwnser++;
+                    if (selectedAwnser == Options.Length)
                     {
 
-                        SelectedIndex = 0;
+                        selectedAwnser = 0;
                     }
 
 
@@ -90,7 +91,7 @@ namespace NahrungsnetzAuftrag
             } while (keyPressed != ConsoleKey.Enter);
              
 
-            return SelectedIndex;
+            return selectedAwnser;
         }
 
     }

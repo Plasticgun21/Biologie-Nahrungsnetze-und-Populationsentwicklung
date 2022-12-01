@@ -263,8 +263,8 @@ namespace NahrungsnetzAuftrag
             int B;
             int C;
             int D;
+            Console.WriteLine("Hier ist die erste Frage");
 
-            
 
             if (selectedIndex == 1)
             {
@@ -274,13 +274,13 @@ namespace NahrungsnetzAuftrag
                 switch (Frage)
                 {
                     case 0:
-                        string frage = $"Ist ein*e {Tier[Nahrungsnetz]} der Unterordnung von ..........?";
-                        string[] multiSelect = { "Einfach", "Mittel", "Schwer", "Zurück" };
-                        QuitzSelect multiStart = new QuitzSelect(prompt, options);
+                        string frage = "Ist ein*e {Tier[Nahrungsnetz]} der Unterordnung von ..........?";
+                        string[] multiSelect = { "A", "B", "C", "D" };
+                        QuitzSelect multiStart = new QuitzSelect("Ist ein*e {Tier[Nahrungsnetz]} der Unterordnung von ..........?", multiSelect);
                         int selectedAwnser = multiStart.Run();
 
-                        Frage = rnd.Next(0, 3);
-                        Antworten = Console.ReadLine();
+                        //Frage = rnd.Next(0, 3);
+                        //Antworten = Console.ReadLine();
                        
                         if(selectedAwnser == 0)
                         {
@@ -463,7 +463,7 @@ namespace NahrungsnetzAuftrag
                 Auslesen();
             }
 
-            Console.WriteLine("Hier ist die erste Frage");
+            
         }
 
 
