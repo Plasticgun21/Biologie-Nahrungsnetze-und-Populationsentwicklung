@@ -261,32 +261,235 @@ namespace NahrungsnetzAuftrag
             string Antworten = null;
             int Punktzahl = 0;
             int Fragezahl = 0;
+            int Frage = 0;
+            int optionRight = 0;
+            string[] Letters = { "A", "B", "C", "D" };
+            int Nahrungsnetz = 0;
+            int AntwZuf = 0;
+            int AnzRunden = 1;
             Console.WriteLine("Hier ist die erste Frage");
 
-
-            if (selectedIndex == 1)
+            if (selectedIndex == 0)
             {
-                Console.Clear();
-                int Frage = 0;
-                int optionRight = 0;
-                string[] Letters = { "A", "B", "C", "D" };
-                int Nahrungsnetz = 0;
-                int FraZuf = 0;
+                Console.Write("Wie viele runden möchten sie Spielen? \r\n>>>");
+                AnzRunden = Convert.ToInt32(Console.ReadLine());
+                for (int i = 0; i < AnzRunden; i++)
+                {
+                    Frage = rnd.Next(0, 5);
+                    switch (Frage)
+                    {
+
+                        case 0:
+                            Nahrungsnetz = rnd.Next(Zeilen.Length);
+                            optionRight = rnd.Next(0, 1);
+                            AntwZuf = rnd.Next(Zeilen.Length);
+                            if (optionRight == 0)
+                            {
+                                prompt = $"Ist ein*e {Tier[Nahrungsnetz]} der Unterordnung von {Unterordnung[Nahrungsnetz]}?";
+                            }
+                            else
+                            {
+                                prompt = $"Ist ein*e {Tier[Nahrungsnetz]} der Unterordnung von {Unterordnung[AntwZuf]}?";
+                            }
+                            options[0] = "Ja";
+                            options[1] = "Nein";
+
+                            mainMenu = new Menu(prompt, options);
+                            selectedIndex = mainMenu.Run();
+
+                            if (selectedIndex == optionRight)
+                            {
+                                Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                                Punktzahl++;
+                                Fragezahl++;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                                Fragezahl++;
+                            }
+                            break;
+
+                        case 1:
+                            Nahrungsnetz = rnd.Next(Zeilen.Length);
+                            optionRight = rnd.Next(0, 1);
+                            AntwZuf = rnd.Next(Zeilen.Length);
+
+                            if (optionRight == 0)
+                            {
+                                prompt = $"wird ein*e {Tier[Nahrungsnetz]} ungefähr {Erwartetes_Alter[Nahrungsnetz]} alt?";
+                            }
+                            else
+                            {
+                                prompt = $"wird ein*e {Tier[Nahrungsnetz]} ungefähr {Erwartetes_Alter[AntwZuf]} alt?";
+                            }
+                            options[0] = "Ja";
+                            options[1] = "Nein";
+
+                            mainMenu = new Menu(prompt, options);
+                            selectedIndex = mainMenu.Run();
+
+                            if (selectedIndex == optionRight)
+                            {
+                                Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                                Punktzahl++;
+                                Fragezahl++;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                                Fragezahl++;
+                            }
+                            break;
+                        case 2:
+                            Nahrungsnetz = rnd.Next(Zeilen.Length);
+                            optionRight = rnd.Next(0, 1);
+                            AntwZuf = rnd.Next(Zeilen.Length);
+
+                            if (optionRight == 0)
+                            {
+                                prompt = $"Ist die ungefähre Population von {Tier[Nahrungsnetz]} {Population[Nahrungsnetz]}?";
+                            }
+                            else
+                            {
+                                prompt = $"Ist die ungefähre Population von {Tier[Nahrungsnetz]} {Population[AntwZuf]}?";
+                            }
+                            options[0] = "Ja";
+                            options[1] = "Nein";
+
+                            mainMenu = new Menu(prompt, options);
+                            selectedIndex = mainMenu.Run();
+
+                            if (selectedIndex == optionRight)
+                            {
+                                Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                                Punktzahl++;
+                                Fragezahl++;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                                Fragezahl++;
+                            }
+                            break;
+                        case 3:
+                            Nahrungsnetz = rnd.Next(Zeilen.Length);
+                            optionRight = rnd.Next(0, 1);
+                            AntwZuf = rnd.Next(Zeilen.Length);
+
+                            if (optionRight == 0)
+                            {
+                                prompt = $"Isst ein*e {Tier[Nahrungsnetz]} {Nahrung[Nahrungsnetz]}?";
+                            }
+                            else
+                            {
+                                prompt = $"Isst ein*e {Tier[Nahrungsnetz]} {Nahrung[AntwZuf]}?";
+                            }
+                            options[0] = "Ja";
+                            options[1] = "Nein";
+
+                            mainMenu = new Menu(prompt, options);
+                            selectedIndex = mainMenu.Run();
+
+                            if (selectedIndex == optionRight)
+                            {
+                                Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                                Punktzahl++;
+                                Fragezahl++;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                                Fragezahl++;
+                            }
+                            break;
+                        case 4:
+                            Nahrungsnetz = rnd.Next(Zeilen.Length);
+                            optionRight = rnd.Next(0, 1);
+                            AntwZuf = rnd.Next(Zeilen.Length);
+
+                            if (optionRight == 0)
+                            {
+                                prompt = $"Sind die Natürliche Feinde der {Tier[Nahrungsnetz]} {Natürliche_Feinde[Nahrungsnetz]}?";
+                            }
+                            else
+                            {
+                                prompt = $"Sind die Natürliche Feinde der {Tier[Nahrungsnetz]} {Natürliche_Feinde[AntwZuf]}?";
+                            }
+                            options[0] = "Ja";
+                            options[1] = "Nein";
+
+                            mainMenu = new Menu(prompt, options);
+                            selectedIndex = mainMenu.Run();
+
+                            if (selectedIndex == optionRight)
+                            {
+                                Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                                Punktzahl++;
+                                Fragezahl++;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                                Fragezahl++;
+                            }
+                            break;
+                        case 5:
+                            Console.WriteLine();
+                            Nahrungsnetz = rnd.Next(Zeilen.Length);
+                            optionRight = rnd.Next(0, 1);
+                            AntwZuf = rnd.Next(Zeilen.Length);
+
+                            if (optionRight == 0)
+                            {
+                                prompt = $"Was ist ein {Tier[Nahrungsnetz]}?";
+                            }
+                            else
+                            {
+                                prompt = $"Was ist ein {Tier[AntwZuf]}?";
+                            }
+                            options[0] = "Ja";
+                            options[1] = "Nein";
+
+                            mainMenu = new Menu(prompt, options);
+                            selectedIndex = mainMenu.Run();
+
+                            if (selectedIndex == optionRight)
+                            {
+                                Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                                Punktzahl++;
+                                Fragezahl++;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                                Fragezahl++;
+                            }
+                            break;
+
+                    }
+                }
+                Console.WriteLine($"Sie haben {Punktzahl} von {Fragezahl} richtig beantwortet");
+            }
+
+            else if (selectedIndex == 1)
+            {
+                
                 switch (Frage)
                 {
                     case 0:
                         Nahrungsnetz = rnd.Next(Zeilen.Length);
                         optionRight = rnd.Next(0, 3);
-                        prompt = $"Was ist die Unterordnung von ein*er {Tier[Nahrungsnetz]}?";
+                        prompt = $"Wie hiesst die Unterordnung eines {Tier[Nahrungsnetz]}?";
 
-                        FraZuf = rnd.Next(0, 3);
-                        options[0] = $"(A) {Unterordnung[FraZuf]}";
-                        FraZuf = rnd.Next(0, 3);
-                        options[1] = $"(B) {Unterordnung[FraZuf]}";
-                        FraZuf = rnd.Next(0, 3);
-                        options[2] = $"(C) {Unterordnung[FraZuf]}";
-                        FraZuf = rnd.Next(0, 3);
-                        options[3] = $"(D) {Unterordnung[FraZuf]}";
+                        AntwZuf = rnd.Next(0, 3);
+                        options[0] = $"(A) {Unterordnung[AntwZuf]}";
+                        AntwZuf = rnd.Next(0, 3);
+                        options[1] = $"(B) {Unterordnung[AntwZuf]}";
+                        AntwZuf = rnd.Next(0, 3);
+                        options[2] = $"(C) {Unterordnung[AntwZuf]}";
+                        AntwZuf = rnd.Next(0, 3);
+                        options[3] = $"(D) {Unterordnung[AntwZuf]}";
 
                         options[optionRight] = $"({Letters[optionRight]}) {Unterordnung[Nahrungsnetz]}";
                         mainMenu = new Menu(prompt, options);
@@ -383,10 +586,10 @@ namespace NahrungsnetzAuftrag
 
                 }
             }
-            if (selectedIndex == 2)
+            else if (selectedIndex == 2)
             {
-                int Frage = rnd.Next(0, 5);
-                int Nahrungsnetz = rnd.Next(Zeilen.Length);
+                Frage = rnd.Next(0, 5);
+                Nahrungsnetz = rnd.Next(Zeilen.Length);
                 switch (Frage)
                 {
 
