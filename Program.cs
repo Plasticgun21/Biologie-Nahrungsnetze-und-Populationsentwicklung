@@ -302,11 +302,13 @@ namespace NahrungsnetzAuftrag
                                 Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
                                 Punktzahl++;
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             else
                             {
                                 Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             break;
 
@@ -334,11 +336,13 @@ namespace NahrungsnetzAuftrag
                                 Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
                                 Punktzahl++;
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             else
                             {
                                 Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             break;
                         case 2:
@@ -365,11 +369,13 @@ namespace NahrungsnetzAuftrag
                                 Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
                                 Punktzahl++;
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             else
                             {
                                 Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             break;
                         case 3:
@@ -396,11 +402,13 @@ namespace NahrungsnetzAuftrag
                                 Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
                                 Punktzahl++;
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             else
                             {
                                 Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             break;
                         case 4:
@@ -427,11 +435,13 @@ namespace NahrungsnetzAuftrag
                                 Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
                                 Punktzahl++;
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             else
                             {
                                 Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             break;
                         case 5:
@@ -459,11 +469,13 @@ namespace NahrungsnetzAuftrag
                                 Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
                                 Punktzahl++;
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             else
                             {
                                 Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             break;
 
@@ -479,6 +491,7 @@ namespace NahrungsnetzAuftrag
                 AnzRunden = Convert.ToInt32(Console.ReadLine());
                 for (int i = 0; i < AnzRunden; i++)
                 {
+                    
                     Frage = rnd.Next(0, 4);
                     switch (Frage)
                     {
@@ -505,11 +518,13 @@ namespace NahrungsnetzAuftrag
                                 Console.WriteLine("Supa");
                                 Punktzahl++;
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             else
                             {
                                 Console.WriteLine("Niss gut");
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
 
                             break;
@@ -536,11 +551,13 @@ namespace NahrungsnetzAuftrag
                                 Console.WriteLine("Supa");
                                 Punktzahl++;
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             else
                             {
                                 Console.WriteLine("Niss gut");
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
 
                             break;
@@ -567,11 +584,13 @@ namespace NahrungsnetzAuftrag
                                 Console.WriteLine("Supa");
                                 Punktzahl++;
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             else
                             {
                                 Console.WriteLine("Niss gut");
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
 
                             break;
@@ -598,11 +617,13 @@ namespace NahrungsnetzAuftrag
                                 Console.WriteLine("Supa");
                                 Punktzahl++;
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             else
                             {
                                 Console.WriteLine("Niss gut");
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
 
                             break;
@@ -628,103 +649,130 @@ namespace NahrungsnetzAuftrag
                                 Console.WriteLine("Supa");
                                 Punktzahl++;
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
                             else
                             {
                                 Console.WriteLine("Niss gut");
                                 Fragezahl++;
+                                Thread.Sleep(1000);
                             }
 
                             break;
 
                     }
                 }
+                Console.WriteLine($"Sie haben {Punktzahl} von {Fragezahl} richtig beantwortet");
             }
             else if (selectedIndex == 2)
             {
-                Frage = rnd.Next(0, 5);
-                Nahrungsnetz = rnd.Next(Zeilen.Length);
-                switch (Frage)
+                Console.Clear();
+                Console.WriteLine("Sie haben Mittel gewählt");
+                Console.Write("Wie viele runden möchten sie Spielen? \r\n>>>");
+                AnzRunden = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
+                for (int i = 0; i < AnzRunden; i++)
                 {
+                    Console.Clear();
+                    Frage = rnd.Next(0, 5);
+                    Nahrungsnetz = rnd.Next(Zeilen.Length);
+                    switch (Frage)
+                    {
 
-                    case 0:
-                        Nahrungsnetz = rnd.Next(Zeilen.Length);
-                        Console.Write($"Wie hiesst die Unterordnung eines {Tier[Nahrungsnetz]}?\r\n>>>");
-                        Antworten = Convert.ToString(Console.ReadLine());
-                        if (Antworten == Tier[Nahrungsnetz])
-                        {
-                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
-                            Punktzahl++;
-                            Fragezahl++;
-                        }
-                        else
-                        {
-                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
-                            Fragezahl++;
-                        }
-                        break;
-                    case 1:
-                        Nahrungsnetz = rnd.Next(Zeilen.Length);
-                        Console.Write($"Wie alt wird ein*e {Tier[Nahrungsnetz]}?\r\n>>>");
-                        if (Antworten == Tier[Nahrungsnetz])
-                        {
-                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
-                            Punktzahl++;
-                            Fragezahl++;
-                        }
-                        else
-                        {
-                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
-                            Fragezahl++;
-                        }
-                        break;
-                    case 2:
-                        Nahrungsnetz = rnd.Next(Zeilen.Length);
-                        Console.Write($"Was ist die ungefähre Population von {Tier[Nahrungsnetz]}?\r\n>>>");
-                        if (Antworten == Tier[Nahrungsnetz])
-                        {
-                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
-                            Punktzahl++;
-                            Fragezahl++;
-                        }
-                        else
-                        {
-                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
-                            Fragezahl++;
-                        }
-                        break;
-                    case 3:
-                        Nahrungsnetz = rnd.Next(Zeilen.Length);
-                        Console.Write($"Was sind die Natürliche Feinde der {Tier[Nahrungsnetz]}?\r\n>>>");
-                        if (Antworten == Tier[Nahrungsnetz])
-                        {
-                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
-                            Punktzahl++;
-                            Fragezahl++;
-                        }
-                        else
-                        {
-                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
-                            Fragezahl++;
-                        }
-                        break;
-                    case 4:
-                        Nahrungsnetz = rnd.Next(Zeilen.Length);
-                        Console.Write($"Was sind die Natürliche Feinde der {Tier[Nahrungsnetz]}?\r\n>>>");
-                        if (Antworten == Tier[Nahrungsnetz])
-                        {
-                            Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
-                            Punktzahl++;
-                            Fragezahl++;
-                        }
-                        else
-                        {
-                            Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
-                            Fragezahl++;
-                        }
-                        break;
-                    
+                        case 0:
+                            Nahrungsnetz = rnd.Next(Zeilen.Length);
+                            Console.Write($"Wie hiesst die Unterordnung eines {Tier[Nahrungsnetz]}?\r\n>>>");
+                            Antworten = Convert.ToString(Console.ReadLine());
+                            if (Antworten == Tier[Nahrungsnetz])
+                            {
+                                Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                                Punktzahl++;
+                                Fragezahl++;
+                                Thread.Sleep(1000);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                                Fragezahl++;
+                                Thread.Sleep(1000);
+                            }
+                            break;
+                        case 1:
+                            Nahrungsnetz = rnd.Next(Zeilen.Length);
+                            Console.Write($"Wie alt wird ein*e {Tier[Nahrungsnetz]}?\r\n>>>");
+                            Antworten = Convert.ToString(Console.ReadLine());
+                            if (Antworten == Tier[Nahrungsnetz])
+                            {
+                                Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                                Punktzahl++;
+                                Fragezahl++;
+                                Thread.Sleep(1000);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                                Fragezahl++;
+                                Thread.Sleep(1000);
+                            }
+                            break;
+                        case 2:
+                            Nahrungsnetz = rnd.Next(Zeilen.Length);
+                            Console.Write($"Was ist die ungefähre Population von {Tier[Nahrungsnetz]}?\r\n>>>");
+                            Antworten = Convert.ToString(Console.ReadLine());
+                            if (Antworten == Tier[Nahrungsnetz])
+                            {
+                                Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                                Punktzahl++;
+                                Fragezahl++;
+                                Thread.Sleep(1000);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                                Fragezahl++;
+                                Thread.Sleep(1000);
+                            }
+                            break;
+                        case 3:
+                            Nahrungsnetz = rnd.Next(Zeilen.Length);
+                            Console.Write($"Was sind die Natürliche Feinde der {Tier[Nahrungsnetz]}?\r\n>>>");
+                            Antworten = Convert.ToString(Console.ReadLine());
+                            if (Antworten == Tier[Nahrungsnetz])
+                            {
+                                Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                                Punktzahl++;
+                                Fragezahl++;
+                                Thread.Sleep(1000);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                                Fragezahl++;
+                                Thread.Sleep(1000);
+                            }
+                            break;
+                        case 4:
+                            Nahrungsnetz = rnd.Next(Zeilen.Length);
+                            Console.Write($"Was sind die Natürliche Feinde der {Tier[Nahrungsnetz]}?\r\n>>>");
+                            Antworten = Convert.ToString(Console.ReadLine());
+                            if (Antworten == Tier[Nahrungsnetz])
+                            {
+                                Console.WriteLine("Gut gemacht, Sie haben die Antwort korreckt.");
+                                Punktzahl++;
+                                Fragezahl++;
+                                Thread.Sleep(1000);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Schade, Sie haben leider falsch geantwortet.");
+                                Fragezahl++;
+                                Thread.Sleep(1000);
+                            }
+                            break;
+
+                    }
                 }
+                Console.WriteLine($"Sie haben {Punktzahl} von {Fragezahl} richtig beantwortet");
 
             }
 
