@@ -15,11 +15,28 @@ namespace NahrungsnetzAuftrag
 {
     internal class Program
     {
-
         static void Main(string[] args)
         {
             Intro();
         }
+
+        static void Selector(string typ)
+        {
+
+            if(typ == "Intro")
+            {
+                Intro();
+            }
+            else if (typ == "Auslesen")
+            {
+                Auslesen();
+            }
+            else if (typ == "Quiz")
+            {
+                Quitz();
+            }
+        }
+
         static void Intro()
         {
             Console.WriteLine("Willkommen im Biologie Menu");
@@ -251,7 +268,7 @@ namespace NahrungsnetzAuftrag
 
             }
 
-            string prompt = " ██████╗ ██╗   ██╗██╗████████╗███████╗\r\n██╔═══██╗██║   ██║██║╚══██╔══╝╚══███╔╝\r\n██║   ██║██║   ██║██║   ██║     ███╔╝ \r\n██║▄▄ ██║██║   ██║██║   ██║    ███╔╝  \r\n╚██████╔╝╚██████╔╝██║   ██║   ███████╗\r\n ╚══▀▀═╝  ╚═════╝ ╚═╝   ╚═╝   ╚══════╝";
+            string prompt = " ██████╗ ██╗   ██╗██╗███████╗\r\n██╔═══██╗██║   ██║██║╚══███╔╝\r\n██║   ██║██║   ██║██║  ███╔╝ \r\n██║▄▄ ██║██║   ██║██║ ███╔╝  \r\n╚██████╔╝╚██████╔╝██║███████╗\r\n ╚══▀▀═╝  ╚═════╝ ╚═╝╚══════╝";
             string[] options = { "Einfach", "Mittel", "Schwer", "Zurück" };
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
@@ -789,9 +806,9 @@ namespace NahrungsnetzAuftrag
         
         static void Populationsdiagramm()
         {
-            double x = 100; //Anzahl Beute im System
-            double y = 10; //Anzahl Jäger im System
-            double a = 0.15; //Wachstumsrate von der Beute
+            double x = 10; //Anzahl Beute im System
+            double y = 5; //Anzahl Jäger im System
+            double a = 0.09; //Wachstumsrate von der Beute
             double b = 0.01; //Todesrate von der Beute
             double c = 0.01; //Wachstumsrate von den Jägern
             double d = 0.05; //Todesrate von den Jägern
@@ -844,10 +861,8 @@ namespace NahrungsnetzAuftrag
             int[] NumsTime = new int[Time];
             int[] NumsPreditor = new int[Time];
             int[] NumsHunter = new int[Time];
-            double[] xVal = new double[Time];
-            double[] yVal = new double[Time];
             int Counter = 0;
-
+            int dt = 1;
             for (int i = 0; i < Time; ++i)
             {
                 NumsTime[Counter] = t;
@@ -858,14 +873,12 @@ namespace NahrungsnetzAuftrag
 
                 double dx = (a * x) - (b * x * y);
                 double dy = (c * x * y) - (d * y);
-                int dt = 1;
+                
 
                 x = x + dx;
                 y = y + dy;
                 t = t + dt;
 
-                xVal[Counter] = x;
-                yVal[Counter] = y;
 
 
                 Counter++;
@@ -873,7 +886,7 @@ namespace NahrungsnetzAuftrag
             Counter = 0;
 
             var chartList = new List<Point>
-            {
+            {/*
                 new Point(Convert.ToInt32(Math.Round(xVal[0], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[0], 0, MidpointRounding.ToEven))),
                 new Point(Convert.ToInt32(Math.Round(xVal[1], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[1], 0, MidpointRounding.ToEven))),
                 new Point(Convert.ToInt32(Math.Round(xVal[2], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[2], 0, MidpointRounding.ToEven))),
@@ -886,7 +899,16 @@ namespace NahrungsnetzAuftrag
                 new Point(Convert.ToInt32(Math.Round(xVal[9], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[9], 0, MidpointRounding.ToEven))),
                 new Point(Convert.ToInt32(Math.Round(xVal[10], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[10], 0, MidpointRounding.ToEven))),
                 new Point(Convert.ToInt32(Math.Round(xVal[11], 0, MidpointRounding.ToEven)), Convert.ToInt32(Math.Round(yVal[11], 0, MidpointRounding.ToEven))),
-
+                */
+                new Point(NumsPreditor[0], NumsHunter[0]),
+                new Point(NumsPreditor[1], NumsHunter[1]),
+                new Point(NumsPreditor[2], NumsHunter[2]),
+                new Point(NumsPreditor[3], NumsHunter[3]),
+                new Point(NumsPreditor[4], NumsHunter[4]),
+                new Point(NumsPreditor[5], NumsHunter[5]),
+                new Point(NumsPreditor[6], NumsHunter[6]),
+                new Point(NumsPreditor[7], NumsHunter[7]),
+                new Point(NumsPreditor[8], NumsHunter[8])
             };
 
             
