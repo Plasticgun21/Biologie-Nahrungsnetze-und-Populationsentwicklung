@@ -41,7 +41,7 @@ namespace NahrungsnetzAuftrag
         {
             Console.WriteLine("Willkommen im Biologie Menu");
             Console.WriteLine("Sie können mit den Pfeiltasten im Biologie Menu navigieren");
-            Thread.Sleep(2000);
+            Thread.Sleep(4000);
             string prompt = "███╗   ██╗ █████╗ ██╗  ██╗██████╗ ██╗   ██╗███╗   ██╗ ██████╗ ███████╗███╗   ██╗███████╗████████╗███████╗\r\n████╗  ██║██╔══██╗██║  ██║██╔══██╗██║   ██║████╗  ██║██╔════╝ ██╔════╝████╗  ██║██╔════╝╚══██╔══╝╚══███╔╝\r\n██╔██╗ ██║███████║███████║██████╔╝██║   ██║██╔██╗ ██║██║  ███╗███████╗██╔██╗ ██║█████╗     ██║     ███╔╝ \r\n██║╚██╗██║██╔══██║██╔══██║██╔══██╗██║   ██║██║╚██╗██║██║   ██║╚════██║██║╚██╗██║██╔══╝     ██║    ███╔╝  \r\n██║ ╚████║██║  ██║██║  ██║██║  ██║╚██████╔╝██║ ╚████║╚██████╔╝███████║██║ ╚████║███████╗   ██║   ███████╗\r\n╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚══════╝";
             string[] options = { "Datenbank", "Quiz", "Diagramm" };
             Menu mainMenu = new Menu(prompt, options);
@@ -71,7 +71,7 @@ namespace NahrungsnetzAuftrag
 
         static void Auslesen()
         {
-            string DateiPfad = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
+            string DateiPfad = @"BiologieDatenbankTemp.txt";
             string[] Zeilen = File.ReadAllLines(DateiPfad);
 
             string[] Unterordnung = new string[Zeilen.Length];
@@ -242,7 +242,7 @@ namespace NahrungsnetzAuftrag
         static void Quitz()
         {
             
-            string DateiPfad = @"C:\Users\nicla\source\repos\Biologie-Nahrungsnetze-und-Populationsentwicklung\BiologieDatenbankTemp.txt";
+            string DateiPfad = @"BiologieDatenbankTemp.txt";
             string[] Zeilen = File.ReadAllLines(DateiPfad);
 
             string[] Unterordnung = new string[Zeilen.Length];
